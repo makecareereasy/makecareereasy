@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Jobs {% endblock %}
+{% block content %}
+
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/backk.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <h1 class="mb-2 bread">Jobs</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Jobs <i class="ion-ios-arrow-forward"></i></span></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<center>
+<div class="jmb-bg">
+<div class="jumbotron" style="background-color: url('/static/images/bg_1.jpg');">
+    <h1 class="display-6">Jobs</h1>
+    <p class="lead">From all career releated fields.</p>
+    <hr class="my-4">
+    <p>Coming soon.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">See Details</a>
+    </p>
+  </div>
+</div>
+  <br><br>
+<div class="jumbotron" style="background-color: url('/static/images/bg_1.jpg');">
+  <h1 class="display-6">Research Releated</h1>
+  <p class="lead">Research Internships and Labs in India.</p>
+  <hr class="my-4">
+  <p>Available.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'jobs.html' %}" role="button">See Details</a>
+  </p>
+</div>
+</center>
+  <br><br>
+
+{% endblock %}
