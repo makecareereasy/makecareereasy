@@ -193,24 +193,22 @@ class PersonalityCompleted(LoginRequiredMixin, View):
                 completed = False
             else:
                 personality_avgs = pd.DataFrame([averages])
-                result = clf_emp.predict(personality_avgs)
+                #result = clf_emp.predict(personality_avgs)
                 #print('Employable', result)
                 possible_results = [1,0]
-                if result in possible_results:
-                    completed = True
-                    clear_test_session(request)
-                    user = User.objects.get(username=request.user.username)
-                    f1str = fscores[2]
-                    f2str = fscores[4]
-                    f3str = fscores[1]
-                    f4str = fscores[3]
-                    f5str = fscores[0]
-                    str = f1str+f2str+f3str+f4str+f5str
-                    print(str)
-                    user.applicant.is_employable = str
-                    user.applicant.save()
-                else:
-                    completed = False
+                #if result in possible_results:
+                completed = True
+                clear_test_session(request)
+                user = User.objects.get(username=request.user.username)
+                f1str = fscores[2]
+                f2str = fscores[4]
+                f3str = fscores[1]
+                f4str = fscores[3]
+                f5str = fscores[0]
+                str = f1str+f2str+f3str+f4str+f5str
+                print(str)
+                user.applicant.is_employable = str
+                user.applicant.save()
         else:
             completed = False
         context = {
