@@ -14,8 +14,8 @@
   </div>
 </section>
 
-  <center>
-<div class="jmb-bg">
+  <!-- <center> -->
+<!-- <div class="jmb-bg">
   <div class="jumbotron" style="background-color: url('/static/images/bg_1.jpg');">
       <h1 class="display-6">Prediction System For Employability</h1>
       <p class="lead">This platform is used to access prospective applicants and verify whom is more suitable for employment.</p>
@@ -36,7 +36,21 @@
     </p>
   </div>
 
-    </center>
+    </center> -->
+    <div class="outerDiv">
+			<div class="leftDiv" style="background-image: url('/static/images/course-8.jpg');">
+				<h1 class="test-heading">Prediction System<br> For Employability</h1>
+				<p class="test-content">This platform is used to access prospective applicants and verify whom is more suitable for employment.<br><br>
+										Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.</p>
+				<div class="test-button-property"><a href="{% url 'personality_home' %}" class="test-button-1">START TEST</a></div>
+			</div>
+			<div class="rightDiv" style="background-image: url('/static/images/course-8.jpg');">
+				<h1 class="test-heading">Job recruitment<br> management system</h1>
+				<p class="test-content">This platform is used to access prospective applicants and verify whom is more suitable for employment.<br><br>
+										Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.</p>
+				<div class="test-button-property"><a href="{% url 'personality_home' %}" class="test-button-2">START TEST</a></div>
+			</div>
+		</div>
 
-        <br>
+        
 {% endblock content %}

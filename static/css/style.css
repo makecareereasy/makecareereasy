@@ -9867,3 +9867,101 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    .test-heading	
+    {		
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      padding-top: 20px;
+      line-height: 1.1;
+      /* font-size: xx-large; */
+    }
+  .test-content
+    {
+      padding-left: 12px;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding-top: 20px;
+      font-size: larger;
+    }
+  .outerDiv
+    {
+      /* background-color: #006699; */
+      color: #fff;
+      height: 450px;
+      width: 1000px;
+      margin: 20px auto;
+      /* padding: 5px; */
+      /* padding-top: 30px; */
+    }
+  .leftDiv
+    {
+      color: #000;
+      height: 100%;
+      width: 50%;
+      float: left;
+    }
+  .rightDiv
+    {
+      color: #000;
+      height: 100%;
+      width: 50%;
+      float: right;
+    }
+  
+    .test-button-property {
+      text-align: center;
+      padding-top: 26px;
+    }
+    .test-button-1 {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      height: 0;
+      line-height: 0;
+      color: #4D3A13;
+      font-family: Arial;
+      width: 166px;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 22px;
+      background-color: #FFAE00;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+     }
+     
+     .test-button-1:hover {
+      border: solid #337FED 1px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      text-decoration: none;
+     }
+     .test-button-2 {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      height: 0;
+      line-height: 0;
+      color: #FFAE00;
+      font-family: Arial;
+      width: 166px;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 22px;
+      background-color: #4D3A13;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+     }
+     
+     .test-button-2:hover {
+      border: solid #337FED 1px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      text-decoration: none;
+     }
