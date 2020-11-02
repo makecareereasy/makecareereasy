@@ -9868,14 +9868,12 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-
-    .test-heading	
+  .test-heading	
     {		
       font-family: 'Bebas Neue', cursive;
       text-align: center;
       padding-top: 20px;
       line-height: 1.1;
-      /* font-size: xx-large; */
     }
   .test-content
     {
@@ -9886,13 +9884,10 @@ textarea.form-control {
     }
   .outerDiv
     {
-      /* background-color: #006699; */
       color: #fff;
       height: 450px;
       width: 1000px;
       margin: 20px auto;
-      /* padding: 5px; */
-      /* padding-top: 30px; */
     }
   .leftDiv
     {
