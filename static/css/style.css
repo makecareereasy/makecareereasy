@@ -9868,53 +9868,50 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-  .test-heading	
-    {		
-      font-family: 'Bebas Neue', cursive;
+  .test-heading {		
+      font-family: 'Exo 2', sans-serif;
       text-align: center;
       padding-top: 20px;
       line-height: 1.1;
-    }
-  .test-content
-    {
-      padding-left: 12px;
+      margin: auto;
+      width: 55%; }
+
+  .test-content {
       font-family: 'Roboto Condensed', sans-serif;
-      padding-top: 20px;
-      font-size: larger;
-    }
-  .outerDiv
-    {
+      font-size: large;
+      text-align: center;
+      width: 67%;
+      margin: auto; }
+
+  .outerDiv {
       color: #fff;
       height: 450px;
       width: 1000px;
-      margin: 20px auto;
-    }
-  .leftDiv
-    {
+      margin: 20px auto; }
+
+  .leftDiv {
       color: #000;
       height: 100%;
       width: 50%;
-      float: left;
-    }
-  .rightDiv
-    {
+      float: left; }
+
+  .rightDiv {
       color: #000;
       height: 100%;
       width: 50%;
-      float: right;
-    }
-  
-    .test-button-property {
+      float: right; }
+
+  .test-button-property {
       text-align: center;
-      padding-top: 26px;
-    }
-    .test-button-1 {
+      padding-top: 26px;  }
+
+  .test-button {
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
       border-radius: 15px;
       height: 0;
       line-height: 0;
-      color: #4D3A13;
+      color: #4D3A13;  
       font-family: Arial;
       width: 166px;
       font-size: 20px;
@@ -9925,39 +9922,41 @@ textarea.form-control {
       display: inline-block;
       cursor: pointer;
       text-align: center;
-     }
-     
-     .test-button-1:hover {
-      border: solid #337FED 1px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      border-radius: 20px;
-      text-decoration: none;
-     }
-     .test-button-2 {
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      border-radius: 15px;
-      height: 0;
-      line-height: 0;
-      color: #FFAE00;
-      font-family: Arial;
-      width: 166px;
-      font-size: 20px;
-      font-weight: 700;
-      padding: 22px;
-      background-color: #4D3A13;
-      text-decoration: none;
-      display: inline-block;
-      cursor: pointer;
-      text-align: center;
-     }
-     
-     .test-button-2:hover {
-      border: solid #337FED 1px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      border-radius: 20px;
-      text-decoration: none;
-     }
-     
+      box-shadow: 2px 5px 5px #333333; }
+      
+    .congo-heading {
+       color: black;
+       font-family: 'Exo 2', sans-serif;
+       margin: 7px auto;
+       padding-top: 15%;
+       line-height: 1.1;
+       letter-spacing: 3px;
+       font-size: xxx-large; }
+
+   .congo-content {
+       color: black;
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size: xx-large;
+       margin-top: 3%;
+       letter-spacing: 0.5px;
+       line-height: 1.5; }
+
+   .congo-button {
+         margin-top: 33px;
+         -webkit-border-radius: 15px;
+         -moz-border-radius: 15px;
+         border-radius: 15px;
+         height: 0;
+         line-height: 0;
+         color: #fbd46d;
+         font-family: Arial;
+         width: auto;
+         font-size: 20px;
+         font-weight: 700;
+         padding: 22px;
+         background-color: #222831 ;
+         text-decoration: none;
+         display: inline-block;
+         cursor: pointer;
+         text-align: center;
+         box-shadow: 2px 5px 5px #333333; }
