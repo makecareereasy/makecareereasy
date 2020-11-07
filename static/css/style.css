@@ -9928,21 +9928,19 @@ textarea.form-control {
        color: black;
        font-family: 'Exo 2', sans-serif;
        margin: 7px auto;
-       padding-top: 15%;
-       line-height: 1.1;
-       letter-spacing: 3px;
-       font-size: xxx-large; }
+       padding-top: 10%;
+       line-height: 1.1; }
 
    .congo-content {
        color: black;
        font-family: 'Roboto Condensed', sans-serif;
        font-size: xx-large;
-       margin-top: 3%;
+       margin-top: 7%;
        letter-spacing: 0.5px;
        line-height: 1.5; }
 
    .congo-button {
-         margin-top: 33px;
+         margin-top: 37px;
          -webkit-border-radius: 15px;
          -moz-border-radius: 15px;
          border-radius: 15px;
