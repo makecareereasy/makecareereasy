@@ -13,30 +13,21 @@
     </div>
   </div>
 </section>
-
-  <center>
-<div class="jmb-bg">
-  <div class="jumbotron" style="background-color: url('/static/images/bg_1.jpg');">
-      <h1 class="display-6">Prediction System For Employability</h1>
-      <p class="lead">This platform is used to access prospective applicants and verify whom is more suitable for employment.</p>
-      <hr class="my-4">
-      <p>Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="{% url 'personality_home' %}" role="button">Start Test</a>
-      </p>
-    </div>
-</div>
-<div class="jumbotron" style="background-color: url('/static/images/bg_1.jpg');">
-    <h1 class="display-6">Job Recruitment Managment System</h1>
-    <p class="lead">This platform is used to access prospective applicants and verify whom is more suitable for employment.</p>
-    <hr class="my-4">
-    <p>Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="{% url 'personality_home' %}" role="button">Start Test</a>
+<div class="outerDiv">
+	<div class="leftDiv" style="background-image: url('/static/images/start-test-1.jpg'); background-size: 500px 450px;">
+		<h4 class="test-heading">PREDICTION SYSTEM FOR EMPLOYABILITY</h4><br>
+		<p class="test-content">This platform is used to access prospective applicants and verify whom is more suitable for employment.<br><br>
+      Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.
     </p>
-  </div>
+		<div class="test-button-property"><a href="{% url 'personality_home' %}" class="test-button">START TEST</a></div>
+	</div>
+	<div class="rightDiv" style="background-image: url('/static/images/start-test-2.jpg');  background-size: 500px 450px;">
+		<h4 class="test-heading">JOB RECRUITMENT MANAGEMENT SYSTEM</h4><br>
+		<p class="test-content">This platform is used to access prospective applicants and verify whom is more suitable for employment.<br><br>
+			Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.</p>
+		<div class="test-button-property"><a href="{% url 'personality_home' %}" class="test-button">START TEST</a></div>
+	</div>
+</div>
 
-    </center>
-
-        <br>
+        
 {% endblock content %}

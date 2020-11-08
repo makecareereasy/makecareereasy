@@ -2,18 +2,13 @@
 
 
 {% block content %}
-<br>
   <center>
-<div class="container">
-    <div class="col-12 mx-auto py-5 text-center">
-        <h1>Congratulations!!</h1>
-        <p>Next, You have to take a personaility test. Pls be sincere with your answers</p>
-        <a href="{% url 'personality_test' %}" class="btn btn-primary">Take Your Personality Test</a>
-    </div>
-
-</div>
-
+      <div style="width: 1000px; height: 500px; background-image: url('/static/images/congo2.jpg'); background-size: 1000px 500px; background-repeat: no-repeat;">
+              <h1 class="congo-heading">CONGRATULATIONS !!</h1>
+              <p class="congo-content">Next, You have to take a personaility test. Please be sincere with your answers.
+              </p>
+              <div><a class="congo-button" href="{% url 'personality_test' %}">Take Your Personality Test</a></div>
+      </div>
   </center>
 
-      <br>
 {% endblock content %}
