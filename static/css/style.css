@@ -9891,12 +9891,16 @@ textarea.form-control {
 
   .leftDiv {
       color: #000;
+      background-image: url('/static/images/start-test-1.jpg');
+      background-size: 500px 450px;
       height: 100%;
       width: 45%;
       float: left; }
 
   .rightDiv {
       color: #000;
+      background-image: url('/static/images/start-test-2.jpg');
+      background-size: 500px 450px;
       height: 100%;
       width: 45%;
       float: right; }
@@ -9923,6 +9927,13 @@ textarea.form-control {
       cursor: pointer;
       text-align: center;
       box-shadow: 2px 5px 5px #333333; }
+
+    .congo-back-img {
+      width: 1000px;
+      height: 500px;
+      background-image: url('/static/images/congratulations.jpg');
+      background-size: 1000px 500px;
+      background-repeat: no-repeat; }
       
     .congo-heading {
        color: black;
@@ -9958,3 +9969,4 @@ textarea.form-control {
          cursor: pointer;
          text-align: center;
          box-shadow: 2px 5px 5px #333333; }
+
