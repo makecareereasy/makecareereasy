@@ -15,29 +15,30 @@
     </div>
 
   </section>
-<center>
-<div class="jmb-bg">
-<div class="jumbotron" style="background-color: url('/static/images/bg_1.jpg');">
-    <h1 class="display-6">Jobs</h1>
-    <p class="lead">From all career releated fields.</p>
-    <hr class="my-4">
+<div class="outerDiv">
+  <div class="leftDiv" style="border-radius: 100%; background-color: #eeeeee;">
+    <center style="margin-top: 100px;">
+		<h1 class="display-6">Jobs</h1>
+		<p class="lead">From all career releated fields.</p>
+    <hr class="my-4" style="width: 400px;">
     <p>Coming soon.</p>
     <p class="lead">
       <a class="btn btn-primary btn-lg" href="#" role="button">See Details</a>
     </p>
-  </div>
-</div>
-  <br><br>
-<div class="jumbotron" style="background-color: url('/static/images/bg_1.jpg');">
-  <h1 class="display-6">Research Releated</h1>
+  </center>
+	</div>
+  <div class="rightDiv" style="border-radius: 100%; background-color: #eeeeee;">
+  <center style="margin-top: 100px;">
+	<h1 class="display-6">Research</h1>
   <p class="lead">Research Internships and Labs in India.</p>
-  <hr class="my-4">
+  <hr class="my-4" style="width: 400px;">
   <p>Available.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="{% url 'jobs.html' %}" role="button">See Details</a>
   </p>
-</div>
 </center>
+	</div>
+</div>
   <br><br>
 
 {% endblock %}
