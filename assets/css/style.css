@@ -9038,14 +9038,14 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 14px;
-  /* background: #232323; Change at bottom*/
+  background: #232323;
   padding: 6em 0; }
   .ftco-footer .ftco-footer-widget {
     width: 100%;
     display: block; }
     .ftco-footer .ftco-footer-widget h2 {
       font-weight: normal;
-      /* color: #fff; Change at bottom */
+      color: #fff;
       margin-bottom: 40px;
       font-size: 22px;
       font-weight: 500; }
@@ -9053,18 +9053,18 @@ textarea.form-control {
       color: #fd5f00; }
       .ftco-footer .ftco-footer-widget .logo span {
         color: #fda638; }
-    /* .ftco-footer .ftco-footer-widget ul li a span {
-      color: #fff; Change at bottom } */
+    .ftco-footer .ftco-footer-widget ul li a span {
+      color: #fff; }
     .ftco-footer .ftco-footer-widget .btn-primary {
       background: #fff !important;
       border: 2px solid #fff !important; }
       .ftco-footer .ftco-footer-widget .btn-primary:hover {
         background: #fff;
         border: 2px solid #fff !important; }
-  /*.ftco-footer p {
-     color: rgba(255, 255, 255, 0.7); Change at bottom} */
-  /*.ftco-footer a {
-     color: rgba(255, 255, 255, 0.7); } Change at bottom*/
+  .ftco-footer p {
+    color: rgba(255, 255, 255, 0.7); }
+  .ftco-footer a {
+    color: rgba(255, 255, 255, 0.7); }
     .ftco-footer a:hover {
       color: #fff; }
   .ftco-footer .ftco-heading-2 {
@@ -9090,24 +9090,20 @@ textarea.form-control {
       width: 100%;
       background: rgba(255, 255, 255, 0.1) !important;
       border: none;
-      /* color: rgba(255, 255, 255, 0.7) !important; Change at bottom */
+      color: rgba(255, 255, 255, 0.7) !important;
       font-size: 16px; }
-      /* .ftco-footer .subscribe-form .form-group input::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari 
-        color: rgba(255, 255, 255, 0.7) !important; } */
-      /*.ftco-footer .subscribe-form .form-group input::-moz-placeholder {
-        /* Firefox 19+ 
-        color: rgba(255, 255, 255, 0.7) !important; } */
-
-      /*.ftco-footer .subscribe-form .form-group input:-ms-input-placeholder {
-        /* IE 0+ 
-        color: rgba(255, 255, 255, 0.7) !important; }*/
-      /*.ftco-footer .subscribe-form .form-group input:-moz-placeholder {
-        /* Firefox 18- 
-        color: rgba(255, 255, 255, 0.7) !important; } 
-        
-      Change at bottom */
-
+      .ftco-footer .subscribe-form .form-group input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: rgba(255, 255, 255, 0.7) !important; }
+      .ftco-footer .subscribe-form .form-group input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(255, 255, 255, 0.7) !important; }
+      .ftco-footer .subscribe-form .form-group input:-ms-input-placeholder {
+        /* IE 0+ */
+        color: rgba(255, 255, 255, 0.7) !important; }
+      .ftco-footer .subscribe-form .form-group input:-moz-placeholder {
+        /* Firefox 18- */
+        color: rgba(255, 255, 255, 0.7) !important; }
     .ftco-footer .subscribe-form .form-group .submit {
       color: #fff !important;
       font-size: 16px;
@@ -9136,8 +9132,8 @@ textarea.form-control {
   .ftco-footer .block-21 .text .heading {
     font-weight: 400;
     font-size: 16px; }
-    /* .ftco-footer .block-21 .text .heading a {
-      color: rgba(255, 255, 255, 0.9); } Change at bottom */
+    .ftco-footer .block-21 .text .heading a {
+      color: rgba(255, 255, 255, 0.9); }
       .ftco-footer .block-21 .text .heading a:hover, .ftco-footer .block-21 .text .heading a:active, .ftco-footer .block-21 .text .heading a:focus {
         color: #fd5f00; }
   .ftco-footer .block-21 .text .meta > div {
@@ -9167,8 +9163,8 @@ textarea.form-control {
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-    /* .ftco-footer-social li a:hover {
-      color: #fff; } Change at bottom */
+    .ftco-footer-social li a:hover {
+      color: #fff; }
 
 .footer-small-nav > li {
   display: inline-block; }
@@ -9543,9 +9539,8 @@ textarea.form-control {
     display: table;
     line-height: 1.5;
     margin-bottom: 15px; }
-  /* .block-23 ul li span {
-    color: rgba(255, 255, 255, 0.7); 
-  } Change at bottom */
+  .block-23 ul li span {
+    color: rgba(255, 255, 255, 0.7); }
   .block-23 ul li .icon, .block-23 ul li .text {
     display: table-cell;
     vertical-align: top; }
@@ -9553,7 +9548,7 @@ textarea.form-control {
     width: 40px;
     font-size: 18px;
     padding-top: 2px;
-    /* color: white;  Change at bottom */}
+    color: white; }
 
 .contact-section .contact-info p a {
   color: #1a1a1a; }
@@ -9968,76 +9963,3 @@ textarea.form-control {
          text-align: center;
          box-shadow: 2px 5px 5px #333333; }
 
-    /*    Changed    */
-
-  .ftco-footer {
-    background: #CFEBFF;
-  }   
-  
-  .ftco-footer .ftco-footer-widget h2 {
-    color: #000000;
-  }
-  
-  .ftco-footer .ftco-footer-widget ul li a span {
-      color: #035aa6; }
-
-  .ftco-footer p {
-    color: rgba(0, 0, 0, 0.7); }
-  .ftco-footer a {
-    color: rgba(0, 0, 0, 0.7); }
- 
-  .ftco-footer .subscribe-form .form-group input {
-    color: rgba(0, 0, 0, 0.7)!important;
-  }
-
-  .ftco-footer .subscribe-form .form-group input::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: rgba(0, 0, 0, 0.7) !important; }
-  .ftco-footer .subscribe-form .form-group input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(0, 0, 0, 0.7) !important; }
-  .ftco-footer .subscribe-form .form-group input:-ms-input-placeholder {
-    /* IE 0+ */
-    color: rgba(0, 0, 0, 0.7) !important; }
-  .ftco-footer .subscribe-form .form-group input:-moz-placeholder {
-    /* Firefox 18- */
-    color: rgba(0, 0, 0, 0.7) !important; }
-
-  .ftco-footer .block-21 .text .heading a {
-    color: rgba(0, 0, 0, 0.9); }
-  
-  .ftco-footer-social li a:hover {
-      color: rgba(0, 0, 0); }
-   
-  .block-23 ul li span {
-  color: #035aa6 }
-
-  .block-23 ul li .icon {
-    color: #035aa6;
-  }
-
-/* footer - waves background  */
-
-* 
-    {
-        margin: 0;
-        padding: 0;
-    }
-
-    .wave
-    {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        width: 100%;
-        line-height: 0;
-    }
-
-    .wave svg
-    {
-        position: absolute;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 153px;
-    }

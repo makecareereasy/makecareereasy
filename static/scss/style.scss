@@ -2180,28 +2180,3 @@ textarea.form-control {
   }
 }
 
- /* footer - waves background  */
-
-* 
-    {
-        margin: 0;
-        padding: 0;
-    }
-
-    .wave
-    {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        width: 100%;
-        line-height: 0;
-    }
-
-    .wave svg
-    {
-        position: absolute;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 153px;
-    }
