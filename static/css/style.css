@@ -9967,6 +9967,26 @@ textarea.form-control {
          cursor: pointer;
          text-align: center;
          box-shadow: 2px 5px 5px #333333; }
+/*contact form*/
+ .contactform{
+  border:outset;
+  padding-top: 10px ;
+  padding-bottom: 10px;
+}
+@media(max-width: 576px)
+{
+  .icon{
+    height: 20%;
+    width:20%;
+    }
+   .desc{
+    width:70%;
+  } 
+  .contactform
+  {
+    margin: 10px 10px 10px 10px;
+  }
+} 
 
    .table-job {
          background-color: #eeeeee;
