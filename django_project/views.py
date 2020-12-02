@@ -29,14 +29,14 @@ def contact(request):
             message_name,                #subject
             message,                     #email body
             message_email,               #from 
-            ['visions1890@gmail.com'],   #to
+            ['careerchela@gmail.com'],   #to
             fail_silently = False)
         subject_user = 'Welcome to Careerchela!'
-        message_user = 'Thanks for writing to us, we will get back to you soon!'
+        message_user = 'Thanks for writing to us, we will get back to you soon!' 
         send_mail(
             subject_user, 
             message_user, 
-            'visions1890@gmail.com', 
+            'careerchela@gmail.com', 
             [message_email], 
             fail_silently = False)
 
