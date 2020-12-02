@@ -5,9 +5,12 @@ from django.conf import settings
 from django.db import transaction
 
 from .models import Applicant
+from django.core.mail import send_mail
 
 # User = settings.AUTH_USER_MODEL
 User = get_user_model()
+emailid=''
+usernameid=''
 
 class ApplicantRegisterForm(forms.ModelForm):
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
@@ -16,9 +19,18 @@ class ApplicantRegisterForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ('username', 'email', 'first_name', 'last_name')
+        print(fields)
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
+        emailid=email
+        send_mail(
+            'CareerChela Team',
+            'Welcome onboard! Your account has been registered',
+            'shuvamdwivedi@gmail.com',
+            [email],
+            fail_silently= False
+        )
         qs = User.objects.filter(email=email)
         if qs.exists():
             raise forms.ValidationError("Email already exists")
@@ -37,5 +49,7 @@ class ApplicantRegisterForm(forms.ModelForm):
         user = super().save(commit=False)
         user.set_password(self.cleaned_data["password1"])
         user.save()
+        usernameid=user
         applicant = Applicant.objects.create(user=user)
+       
         return user
