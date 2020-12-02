@@ -9896,7 +9896,6 @@ textarea.form-control {
 
   .leftDiv {
       color: #000;
-      background-image: url('/static/images/start-test-1.jpg');
       background-size: 500px 450px;
       height: 100%;
       width: 45%;
@@ -9904,7 +9903,6 @@ textarea.form-control {
 
   .rightDiv {
       color: #000;
-      background-image: url('/static/images/start-test-2.jpg');
       background-size: 500px 450px;
       height: 100%;
       width: 45%;
@@ -9975,7 +9973,6 @@ textarea.form-control {
          text-align: center;
          box-shadow: 2px 5px 5px #333333; }
 
-  /*    Changed    */
 
   .ftco-footer {
     background: #CFEBFF;
@@ -10023,28 +10020,5 @@ textarea.form-control {
     color: #035aa6;
   }
 
-  /* footer - waves background  */
-
-* 
-    {
-        margin: 0;
-        padding: 0;
-    }
-
-    .wave
-    {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        width: 100%;
-        line-height: 0;
-    }
-
-    .wave svg
-    {
-        position: absolute;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 153px;
-    }
+  .table-job {
+        border-radius: 20px; }

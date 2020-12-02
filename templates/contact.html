@@ -4,42 +4,122 @@
 {% block content %}
 
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/cont.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Contact Us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
-          </div>
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/cont.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-2 bread">Contact Us</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br />
+<br />
+ {% if message_name %}
+<center> <h2> Thanks {{ message_name }} for writing to us.</h2> 
+         <h4> We will get back to you soon! </h4>
+ {% endif %}
+</center>
+<br> <br>
+<!--Contact Form Start-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="font-weight-bold">Get in touch for further details.</h3>
+      <div class="row">
+        <img class="img-fluid col-md-2 col-sm-2 icon" id="mappointer" src="/static/images/map-pointer.png">
+        <div class="col-md-10 col-sm-10 desc">
+            <div class="col-md-12">School of Computer Science and Engineering</div>
+            <div class="col-md-12">KIIT University,</div>
+            <div class="col-md-12">Bhubaneshwar,India 751024</div>
         </div>
       </div>
-    </section>
-<center>
+      <br/>
+      <div class="row">
+        <img class="img-fluid col-md-2 col-sm-2 icon" id="phone" src="/static/images/phone.png">
+        <div class="col-md-10 col-sm-10 desc">
+          <div class="col-md-12">+91 9975667652, 7749822663</div>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <img class="img-fluid col-md-2 col-sm-2 icon" id="mail" src="/static/images/mail.png">
+        <div class="col-md-10 col-sm-10 desc">
+          <div class="col-md-12">careerchela@gmail.com</div>
+          
+        </div>
+      </div>
+    </div>
+    <br/>
+    <!--contact form-->
+    <div class="col-md-6 contactform"  >
+      <form action="{% url 'contact.html' %}" method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+          <input type="text"  name="message-name" 
+           class="form-control text-muted" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="message-email"
+          class="form-control"  aria-describedby="emailHelp" placeholder="Your Email">
+          <small id="emailHelp" class="form-text text-muted">
+          We'll never share your email with anyone else.
+          </small>
+        </div>
+        <div class="form-group">
+          <input type="tel"  name="message-phone" 
+          class="form-control"  placeholder="Your Contact Number">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" 
+          rows="3" placeholder="Message"></textarea>
+        </div>
+        <center>
+          <button type="submit" class="btn btn-primary col-3">Send Message</button>
+        </center>
+      </form>
+    </div>
+  </div>
+</div>
+<!--Contact Form End-->
+
+  
+  <br><br>
+  <center>
+  <div class="col-md-2 col-lg-10 ftco-animate">
+    <h2> Our Mission </h2>
+    <div class="staff ">
+      Career Chela is proud to provide free or low-cost career and personality assessments for charities, non-profits,
+      and schools. If you need to provide reliable career guidance to disadvantaged students or adults, we are here to
+      help.
+
+      Assessments can be costly. Often, they are out of the budget for those who need them most. Our mission is to
+      ensure that professional quality, scientifically validated career and personality assessments are available to
+      everyone who can benefit from them.
+
+      Through this program we offer the Career Personality Profile (a career interests and personality inventory based
+      on the Big Five personality models) and career guidance.
+
+      The assessments are completed online, and are designed to integrate with our career information database. Your
+      group's leader has access to a system that gives him or her full control over the group's assessment process, from
+      signing up participants to viewing their results.
+
+      If this sounds like a program that could benefit your organization, please email us and we will contact you to
+      discuss your needs.
+
+      We look forward to hearing from you!
+    </div>
+  </div>
 
 </center>
- <br><br>
- <div class="col-md-2 col-lg-10 ftco-animate">
-   <h2> Our Mission </h2>
-   <div class="staff">
-     Career Chela is proud to provide free or low-cost career and personality assessments for charities, non-profits, and schools. If you need to provide reliable career guidance to disadvantaged students or adults, we are here to help.
 
-     Assessments can be costly. Often, they are out of the budget for those who need them most. Our mission is to ensure that professional quality, scientifically validated career and personality assessments are available to everyone who can benefit from them.
-
-     Through this program we offer the Career Personality Profile (a career interests and personality inventory based on the Big Five personality models) ans career guidance.
-
-     The assessments are completed online, and are designed to integrate with our career information database. Your group's leader has access to a system that gives him or her full control over the group's assessment process, from signing up participants to viewing their results.
-
-     If this sounds like a program that could benefit your organization, please email us and we will contact you to discuss your needs.
-
-     We look forward to hearing from you!
-   </div>
- </div>
-
-</center>
-
-         <br>
-         <br>
-<br >
-		  <br>
+<br>
+<br>
+<br>
+<br>
 {% endblock %}
