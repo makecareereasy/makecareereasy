@@ -24,16 +24,19 @@ class ApplicantRegisterForm(forms.ModelForm):
     def clean_email(self):
         email = self.cleaned_data.get('email')
         emailid=email
-        send_mail(
-            'CareerChela Team',
-            'Welcome onboard! Your account has been registered',
-            'shuvamdwivedi@gmail.com',
-            [email],
-            fail_silently= False
-        )
+        
         qs = User.objects.filter(email=email)
         if qs.exists():
             raise forms.ValidationError("Email already exists")
+        else:
+            send_mail(
+                'CareerChela Team',
+                'Welcome onboard! Your account has been registered!!',
+                'careerchela@gmail.com',
+                [emailid],
+                fail_silently= False
+            )
+            
         return email
 
     def clean_password2(self):
@@ -51,5 +54,5 @@ class ApplicantRegisterForm(forms.ModelForm):
         user.save()
         usernameid=user
         applicant = Applicant.objects.create(user=user)
-       
+      
         return user
