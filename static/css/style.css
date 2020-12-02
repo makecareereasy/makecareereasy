@@ -10048,23 +10048,3 @@ textarea.form-control {
         width: calc(100% + 1.3px);
         height: 153px;
     }
-/* .custom-shape-divider-bottom-1606761130 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1606761130 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 275px;
-}
-
-.custom-shape-divider-bottom-1606761130 .shape-fill {
-    fill: #FFFFFF;
-} */

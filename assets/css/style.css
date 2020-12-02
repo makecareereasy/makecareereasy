@@ -10041,31 +10041,3 @@ textarea.form-control {
         width: calc(100% + 1.3px);
         height: 153px;
     }
-/* .wave-background {
-  position: absolute;
-  width: 1920px;
-  height: 791.9px;
-  margin: 114.5px 0 0;
-  padding: 31.9px 203px 66px 67.4px;
-  background-color: #6ed7ee;
-} */
-/* .custom-shape-divider-bottom-1606761130 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1606761130 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 275px;
-}
-
-.custom-shape-divider-bottom-1606761130 .shape-fill {
-    fill: #FFFFFF;
-} */
