@@ -51,7 +51,8 @@
         <li class="nav-item"><a href="{% url 'courses.html' %}" class="nav-link">Career Fields</a></li>
         <li class="nav-item"><a href="{% url 'teacher.html' %}" class="nav-link">Jobs</a></li>
         <li class="nav-item"><a href="{% url 'test.html' %}" class="nav-link">Test</a></li>
-            <li class="nav-item"><a href="{% url 'contact.html' %}" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="{% url 'contact.html' %}" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="{% url 'team.html' %}" class="nav-link">Team</a></li>
 
         {% if request.user.is_authenticated %}
             <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log Out</a></li>
