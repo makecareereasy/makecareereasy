@@ -9891,6 +9891,7 @@ textarea.form-control {
 
   .leftDiv {
       color: #000;
+      background-image: url('/static/images/start-test-1.jpg');
       background-size: 500px 450px;
       height: 100%;
       width: 45%;
@@ -9898,6 +9899,7 @@ textarea.form-control {
 
   .rightDiv {
       color: #000;
+      background-image: url('/static/images/start-test-2.jpg');
       background-size: 500px 450px;
       height: 100%;
       width: 45%;
@@ -9925,7 +9927,7 @@ textarea.form-control {
       cursor: pointer;
       text-align: center;
       box-shadow: 2px 5px 5px #333333; }
-      
+
     .congo-heading {
        color: black;
        font-family: 'Exo 2', sans-serif;
