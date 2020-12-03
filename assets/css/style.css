@@ -9926,13 +9926,6 @@ textarea.form-control {
       text-align: center;
       box-shadow: 2px 5px 5px #333333; }
 
-    .congo-back-img {
-      width: 1000px;
-      height: 500px;
-      background-image: url('/static/images/congratulations.jpg');
-      background-size: 1000px 500px;
-      background-repeat: no-repeat; }
-      
     .congo-heading {
        color: black;
        font-family: 'Exo 2', sans-serif;
@@ -9967,7 +9960,3 @@ textarea.form-control {
          cursor: pointer;
          text-align: center;
          box-shadow: 2px 5px 5px #333333; }
-
-   .table-job {
-         background-color: #eeeeee;
-         border-radius: 20px; }
