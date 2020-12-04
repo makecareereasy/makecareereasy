@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+  <center>
+  
+      <br>
+    <div class="container">
+
+        {% if completed %}
+            <div class="congo-back-img">
+                <h1 class="congo-heading">You're Done</h1>
+                <p class="congo-content">Thank You for taking your time to take these test. We would get back to you through the email you provided.</p>
+                <div><a class="congo-button" href="{% url 'logout' %}">Logout</a></div>
+            </div>
+        {% else %}
+            <h4>Oopss!!</h4>
+            <p>Something went wrong. Contact the admin if this problem persists.</p>
+        {% endif %}
+
+
+    </div>
+
+      </center>
+
+          <br>
+{% endblock content %}
