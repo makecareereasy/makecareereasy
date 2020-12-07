@@ -77,12 +77,8 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'careerchela',
-        'USER': 'postgres',
-        'PASSWORD': 'career12',
-        'HOST': '35.236.52.244',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR ,'db.sqlite3'),
     }
 }
 
@@ -134,3 +130,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/personality/home/'
 LOGOUT_REDIRECT_URL = '/'
+
+#(SMTP)email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True 
+EMAIL_HOST_USER = 'careerchela@gmail.com'
+EMAIL_HOST_PASSWORD = ''

@@ -215,3 +215,6 @@ class PersonalityCompleted(LoginRequiredMixin, View):
             'completed': completed
         }
         return render(request, 'personality/personality_completed.html', context)
+        
+def team(request):
+    return render(request,'team.html')
