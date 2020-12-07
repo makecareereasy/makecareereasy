@@ -4,91 +4,201 @@
 {% block content %}
 
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/cont.jpg');">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row no-gutters slider-text align-items-center justify-content-center">
-      <div class="col-md-9 ftco-animate text-center">
-        <h1 class="mb-2 bread">Contact Us</h1>
-        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<br />
-<br />
- {% if message_name %}
-<center> <h2> Thanks {{ message_name }} for writing to us.</h2> 
-         <h4> We will get back to you soon! </h4>
- {% endif %}
-</center>
-<br> <br>
-<!--Contact Form Start-->
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h3 class="font-weight-bold">Get in touch for further details.</h3>
-      <div class="row">
-        <img class="img-fluid col-md-2 col-sm-2 icon" id="mappointer" src="/static/images/map-pointer.png">
-        <div class="col-md-10 col-sm-10 desc">
-            <div class="col-md-12">School of Computer Science and Engineering</div>
-            <div class="col-md-12">KIIT University,</div>
-            <div class="col-md-12">Bhubaneshwar,India 751024</div>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/cont.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">Contact Us</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
         </div>
       </div>
-      <br/>
-      <div class="row">
-        <img class="img-fluid col-md-2 col-sm-2 icon" id="phone" src="/static/images/phone.png">
-        <div class="col-md-10 col-sm-10 desc">
-          <div class="col-md-12">+91 9975667652, 7749822663</div>
-        </div>
-      </div>
-      <br/>
-      <div class="row">
-        <img class="img-fluid col-md-2 col-sm-2 icon" id="mail" src="/static/images/mail.png">
-        <div class="col-md-10 col-sm-10 desc">
-          <div class="col-md-12">careerchela@gmail.com</div>
-          
-        </div>
-      </div>
-    </div>
-    <br/>
-    <!--contact form-->
-    <div class="col-md-6 contactform"  >
-      <form action="{% url 'contact.html' %}" method="post">
-        {% csrf_token %}
-        
-        <div class="form-group">
-          <input type="text"  name="message-name" 
-           class="form-control text-muted" placeholder="Your Name">
-        </div>
-        <div class="form-group">
-          <input type="email" name="message-email"
-          class="form-control"  aria-describedby="emailHelp" placeholder="Your Email">
-          <small id="emailHelp" class="form-text text-muted">
-          We'll never share your email with anyone else.
-          </small>
-        </div>
-        <div class="form-group">
-          <input type="tel"  name="message-phone" 
-          class="form-control"  placeholder="Your Contact Number">
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" name="message" 
-          rows="3" placeholder="Message"></textarea>
+    </section>
+<center>
+
+<br>
+  <h1>Our Mentor</h1>
+
+  <section class="home-about-area section-gap">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-5 col-md-6 home-about-left">
+          <center>
+          <img class="img-fluid" src="/static/images/arup.jpg" alt="">
+          </center>
         </div>
         <center>
-          <button type="submit" class="btn btn-primary col-3">Send Message</button>
-        </center>
-      </form>
+        <div class="text pt-5 text-center">
+          <h3>Dr. Arup Abhinna Acharya</h3>
+          <span class="position mb-2">Associate Professor at KIIT University, India</span>
+
+          <div class="faded">
+            <p></p>
+            <p>I am fascinated by the extensive impact computers can have in solving real world ...</p>
+
+            <p><a>+91 9861058079</a></p>
+            <p><a href="mailto:aacharyafcs@kiit.ac.in">aacharyafcs@kiit.ac.in</a></p>
+
+            <ul class="ftco-social text-center">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com/arupacharya.kiit"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.linkedin.com/in/dr-arup-abhinna-acharya-14849917/"><span class="icon-linkedin"></span></a></li>
+            </ul>
+           </div>
+        </div>
+      </center>
+      </div>
+        </div>
+
+  </section>
+
+  <br>
+
+  <h1>Our Team</h1>
+  <br>
+
+  <section class="home-about-area section-gap">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-4 col-md-5 home-about-left">
+          <img class="img-fluid" src="/static/images/oum.jpg" alt="">
+        </div>
+        <div class="text pt-3 text-center">
+          <h3>Oum Kale</h3>
+          <span class="position mb-1">Software Developer/Innovator</span>
+          <div class="faded">
+            <p>I am fascinated by the extensive impact computers can have in solving real world ...</p>
+            <p><a >+91 9975667652</a></p>
+            <p><a href="mailto:1705022@kiit.ac.in">1705022@kiit.ac.in</a></p>
+
+            <ul class="ftco-social text-center">
+
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+
+      </div>
+        </div>
+      </div>
+        </div>
+
+   </section>
+        <br>
+        <br><br>
+        <section class="home-about-area section-gap">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+            <div class="col-lg-4 col-md-5 home-about-left">
+                <img class="img-fluid" src="/static/images/praj.jpg" alt="">
+              </div>
+              <div class="text pt-3 text-center">
+                <h3>Prajjwal Kumar</h3>
+                <span class="position mb-2">Backend Developer/Researcher</span>
+                <div class="faded">
+                  <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                  <p><a >+91 8178778264</a></p>
+                  <p><a href="mailto:1706241@kiit.ac.in">1706241@kiit.ac.in</a></p>
+
+                  <ul class="ftco-social text-center">
+                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                  </ul>
+
+            </div>
+              </div>
+            </div>
+              </div>
+
+         </section>
+
+         <br>
+         <br>
+<br >
+<section class="home-about-area section-gap">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-4 col-md-5 home-about-left">
+        <img class="img-fluid" src="/static/images/vj.jpg" alt="">
+      </div>
+      <div class="text pt-3 text-center">
+        <h3>Vijay Kumar</h3>
+        <span class="position mb-3">Web Developer/Content Strategist</span>
+        <div class="faded">
+          <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+          <p><a >+91 7749822663</a></p>
+          <p><a href="mailto:1706284@kiit.ac.in">1706284@kiit.ac.in</a></p>
+
+          <ul class="ftco-social text-center">
+            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+          </ul>
+
     </div>
-  </div>
-</div>
-<!--Contact Form End-->
-<br>
-<br>
-<br>
-<br>
+      </div>
+    </div>
+      </div>
+<br><br>
+ </section>
+ <center>
+ <section class="home-about-area section-gap">
+   <div class="container">
+     <div class="row align-items-center justify-content-between">
+       <div class="col-lg-4 col-md-5 home-about-left">
+         <img class="img-fluid" src="/static/images/ava.jpg" alt="">
+       </div>
+       <div class="text pt-3 text-center">
+         <h3>Aakash Srivastava</h3>
+         <span class="position mb-4">Backend Developer</span>
+         <div class="faded">
+           <p>An entrepreneur by heart and a developer by mind</p>
+           <p><a >+91 8146668640</a></p>
+           <p><a href="mailto:1805460@kiit.ac.in">1805460@kiit.ac.in</a></p>
+
+           <ul class="ftco-social text-center">
+
+             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+             <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+             <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+             <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+           </ul>
+
+       </div>
+       </div>
+     </div>
+    </div>
+
+  </section>
+</center>
+ <br><br>
+ <div class="col-md-2 col-lg-10 ftco-animate">
+   <h2> Our Mission </h2>
+   <div class="staff">
+     Career Chela is proud to provide free or low-cost career and personality assessments for charities, non-profits, and schools. If you need to provide reliable career guidance to disadvantaged students or adults, we are here to help.
+
+     Assessments can be costly. Often, they are out of the budget for those who need them most. Our mission is to ensure that professional quality, scientifically validated career and personality assessments are available to everyone who can benefit from them.
+
+     Through this program we offer the Career Personality Profile (a career interests and personality inventory based on the Big Five personality models) ans career guidance.
+
+     The assessments are completed online, and are designed to integrate with our career information database. Your group's leader has access to a system that gives him or her full control over the group's assessment process, from signing up participants to viewing their results.
+
+     If this sounds like a program that could benefit your organization, please email us and we will contact you to discuss your needs.
+
+     We look forward to hearing from you!
+   </div>
+ </div>
+
+</center>
+
+         <br>
+         <br>
+<br >
+		  <br>
 {% endblock %}

@@ -22,7 +22,6 @@ urlpatterns = [
     path('index/', login_required (TemplateView.as_view(
         template_name='personality/index.html'
     )), name='index'),
-     path('team/', views.team, name='team.html'),
     #re_path(r'^admin/',admin.site.urls),
     #url(r'^admin/',admin.site.urls,name='admin'),
 
