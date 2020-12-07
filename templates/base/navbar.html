@@ -44,20 +44,20 @@
         <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
       </div>
     </form>
-      <div class="collapse navbar-collapse" id="ftco-nav" style="width: 670px">
+      <div class="collapse navbar-collapse" id="ftco-nav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a href="{% url 'index.html' %}" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="{% url 'about.html' %}" class="nav-link pl-0">About</a></li>
-        <li class="nav-item"><a href="{% url 'courses.html' %}" class="nav-link" style="padding-left: 0px; padding-top: 22.22px; padding-right: 0px; width: 100px;">Career Fields</a></li>
+        <li class="nav-item"><a href="{% url 'courses.html' %}" class="nav-link" style="padding-left: 0px; padding-top: 22.22px; padding-right: 0px;">Career Fields</a></li>
         <li class="nav-item"><a href="{% url 'teacher.html' %}" class="nav-link">Jobs</a></li>
         <li class="nav-item"><a href="{% url 'test.html' %}" class="nav-link">Test</a></li>
         <li class="nav-item"><a href="{% url 'contact.html' %}" class="nav-link">Contact</a></li>
         <li class="nav-item"><a href="{% url 'team.html' %}" class="nav-link">Team</a></li>
 
         {% if request.user.is_authenticated %}
-            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link" style="width: 90px;">Log Out</a></li>
+            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log Out</a></li>
         {% else %}
-            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link" style="width: 90px;">Log In</a></li>
+            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log In</a></li>
 
         {% endif %}
       </ul>
