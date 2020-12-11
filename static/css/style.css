@@ -8268,7 +8268,7 @@ h1, h2, h3, h4, h5,
         padding-right: 0;
         padding-top: .9rem;
         padding-bottom: .9rem;
-        color: rgba(255, 255, 255, 0.7); }
+        color: #0d1128 }
         .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
           color: #fff; } }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
@@ -9039,7 +9039,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   /* background: #232323; Change at bottom */
-  padding: 20px 0; }
+  padding: 30px 0; }
   .ftco-footer .ftco-footer-widget {
     width: 100%;
     display: block; }
@@ -10042,3 +10042,103 @@ textarea.form-control {
 
   .table-job {
         border-radius: 20px; }
+
+.login-container{
+  width: 581px;
+  height: 618px;
+  margin: 54px 50px 98px 50px;
+  padding: 22px 52px 287px 71px;
+  opacity: 0.83;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.login {
+  width: 134px;
+  height: 53px;
+  margin: 0 10px 26px 54px;
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    outline: none;
+    padding: 10px 120px 5px 5px;
+}
+
+.text1{
+  width: 73px;
+  height: 33px;
+  margin: 26px 2.5px 15px 30.5px;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.btn, .btn-large, .btn-small{
+  text-decoration: none;
+    color: #fff;
+    background-color:#fcbf1e;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+
+.forgot-password {
+  margin-top: 40px;
+  padding-right: 5px;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00a8cc;
+}
+
+.sign-up {
+  width: 319px;
+  margin-top: 10px;
+  margin-left: 145px;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.login-submit-container{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sign-up:hover a {
+  color: #fd5f00; 
+}

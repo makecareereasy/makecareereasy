@@ -1,8 +1,16 @@
-{% extends 'base.html' %}
+{% load static %}
 
-
-{% block content %}
-<center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <link rel="stylesheet" href="{% static '/static/css/style.css' %}">
+</head>
+<body>
+  <center>
     <div class="login-container">
         <h2 div="login">LOGIN</h2>
         <p style="margin-left: 25.5;" class="text1">USING</p>
@@ -14,9 +22,13 @@
 
         <p style="margin-left: 40.5;" class="text1" >OR</p>
         <form action="" method="post">
-            {% csrf_token %}
           <input type="hidden" name="csrfmiddlewaretoken" value="pazkdYfzGly9s4OdlXpQebpB1fA1o5yqJZGFfEteMdnueYQ7OABkfSt7AT0Pm79B">
-          {{ form.as_p }}
+            <p> 
+              <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username" class="login-form-field" placeholder="Email Address">
+            </p>
+            <p>
+              <input type="password" name="password" autocomplete="current-password" required id="id_password" class="login-form-field" placeholder="Password" >
+            </p>
           <input type="hidden" name="next" value="">
           <input type="submit" class="btn btn-primary" value="Login">
         </form>
@@ -24,9 +36,9 @@
         <a class="forgot-password" href="" >Forgot Password?</a>
         <p class="sign-up">Not a member? <a href="" style="color: #00a8cc;">Sign Up</a> </p>
       </div>
-     </div>
-     <div>
+    </div>
+    <div>
     </div>
   </center>
-
-{% endblock content %}
+</body>
+</html>
