@@ -10140,7 +10140,7 @@ textarea.form-control {
   position : relative;
   /* box-shadow : 5px 5px 10px rgba(0,0,0,0.3); */
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  font-family: "Roboto", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif; }
   .reset-heading {
     font-family: 'Exo 2', sans-serif;
     text-align: center;
@@ -10150,7 +10150,7 @@ textarea.form-control {
   .description{
     margin-bottom: 20px;
   }
-}
+
 .inp{
   border: 0;
   outline: 0;
