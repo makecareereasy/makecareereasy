@@ -10030,7 +10030,7 @@ textarea.form-control {
 .login {
   width: 134px;
   height: 53px;
-  margin: 0 10px 26px 54px;
+  margin: 0 0px 26px 50px;
   font-family: 'Open Sans';
   font-size: 40px;
   font-weight: bold;
@@ -10059,6 +10059,21 @@ textarea.form-control {
   width: 73px;
   height: 33px;
   margin: 26px 2.5px 15px 30.5px;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.text2{
+  width: 73px;
+  height: 33px;
+  margin: 26px 2.5px 15px 49.5px;
   font-family: 'Open Sans';
   font-size: 15px;
   font-weight: normal;
@@ -10125,7 +10140,7 @@ textarea.form-control {
   position : relative;
   /* box-shadow : 5px 5px 10px rgba(0,0,0,0.3); */
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  font-family: "Roboto", arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif; }
   .reset-heading {
     font-family: 'Exo 2', sans-serif;
     text-align: center;
@@ -10135,7 +10150,7 @@ textarea.form-control {
   .description{
     margin-bottom: 20px;
   }
-}
+
 .inp{
   border: 0;
   outline: 0;

@@ -12,7 +12,7 @@
             console.log('User is: ' + JSON.stringify(googleUser.getBasicProfile()));}
         </script>
 
-        <p style="margin-left: 40.5;" class="text1" >OR</p>
+        <p style="margin-left: 40.5;" class="text2" >OR</p>
         <form action="" method="post">
             {% csrf_token %}
           <input type="hidden" name="csrfmiddlewaretoken" value="pazkdYfzGly9s4OdlXpQebpB1fA1o5yqJZGFfEteMdnueYQ7OABkfSt7AT0Pm79B">
@@ -20,6 +20,7 @@
           <input type="hidden" name="next" value="">
           <input type="submit" class="btn btn-primary" value="Login">
         </form>
+
       <div class="login-submit-container">
         <a class="forgot-password" href="">Forgot Password?</a>
         <p class="sign-up">Not a member? <a href="" style="color: #00a8cc;">Sign Up</a></p>
