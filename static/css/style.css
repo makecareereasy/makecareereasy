@@ -10030,7 +10030,7 @@ textarea.form-control {
 .login {
   width: 134px;
   height: 53px;
-  margin: 0 10px 26px 54px;
+  margin: 0 0px 26px 50px;
   font-family: 'Open Sans';
   font-size: 40px;
   font-weight: bold;
@@ -10059,6 +10059,21 @@ textarea.form-control {
   width: 73px;
   height: 33px;
   margin: 26px 2.5px 15px 30.5px;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.text2{
+  width: 73px;
+  height: 33px;
+  margin: 26px 2.5px 15px 49.5px;
   font-family: 'Open Sans';
   font-size: 15px;
   font-weight: normal;
@@ -10115,4 +10130,8 @@ textarea.form-control {
 
 .sign-up:hover a {
   color: #fd5f00; 
+}
+
+.g-signin2 {
+  width: 300px;
 }
