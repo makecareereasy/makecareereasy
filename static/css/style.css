@@ -10132,6 +10132,60 @@ textarea.form-control {
   color: #fd5f00; 
 }
 
-.g-signin2 {
+#profile-container {
+  height: 40  0px;
+  width: 390px;
+  padding: 20px;
+  border-radius: 5px;
+  position : relative;
+  /* box-shadow : 5px 5px 10px rgba(0,0,0,0.3); */
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  font-family: "Roboto", arial, sans-serif;
+  .reset-heading {
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .description{
+    margin-bottom: 20px;
+  }
+}
+.inp{
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid grey;
   width: 300px;
+  letter-spacing: 1.5px;
+  font-size: medium;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
+.reset-button-property {
+  text-align: center;  }
+
+.reset-button {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  height: 0;
+  line-height: 0;
+  color: white;  
+  font-family: Arial;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 22px;
+  background-color: #222831;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 2px 5px 5px #333333; }
+
+.form-margin {
+  margin: 30px auto;
 }
