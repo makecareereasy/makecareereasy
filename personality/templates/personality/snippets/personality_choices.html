@@ -1,0 +1,31 @@
+{% for p in personality_type.personalityquestion_set.all %}
+    <div class="card" style="margin: 20px 0;">
+        <div class="card-body">
+            <h4 class="card-title">{{forloop.counter}}) {{ p.question_text }}</h4>
+            <label for="stragree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="stragree{{forloop.counter}}" value="5" required   />
+                Strongly Agree
+            </label><br />
+            <label for="agree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="agree{{forloop.counter}}" value="4" required   />
+                   Agree
+            </label><br />
+            <label for="neutral{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="neutral{{forloop.counter}}" value="3" required  />
+                Neutral
+            </label><br />
+            <label for="dagree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="dagree{{forloop.counter}}" value="2" required />
+                  Disagree
+            </label><br />
+            <label for="disagree{{forloop.counter}}">
+                <input type="radio" name="choice{{forloop.counter}}" id="disagree{{forloop.counter}}" value="1" required />
+                Strongly Disagree
+            </label><br />
+
+
+
+        </div>
+    </div>
+
+{% endfor %}
