@@ -29,9 +29,9 @@ class ApplicantRegisterForm(forms.ModelForm):
             raise forms.ValidationError("Email already exists")
         else:
             send_mail(
-                'CareerChela Team',
+                'Make Career Easy Team',
                 'Welcome onboard! Your account has been registered!!',
-                'careerchela@gmail.com',
+                'mcareere@gmail.com',
                 [emailid],
                 fail_silently= False
             )
