@@ -22,7 +22,7 @@
                     </div>
                    <div class="col-md topper d-flex align-items-center justify-content-end">
                         <p class="mb-0">
-                            <a href="{% url 'register' %}" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+                            <a href="{% url 'account_signup' %}" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
                                 <span>Register</span>
                             </a>
                         </p>
@@ -57,7 +57,7 @@
         {% if request.user.is_authenticated %}
             <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log Out</a></li>
         {% else %}
-            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log In</a></li>
+            <li class="nav-item"><a href="{% url 'account_login' %}" class="nav-link">Log In</a></li>
 
         {% endif %}
       </ul>

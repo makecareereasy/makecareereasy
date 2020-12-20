@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Sign In{% endblock %}
+
+{% block content %}
+
+  <center>
+      <br>
+    <div id="profile-container">
+      <h2 class="reset-heading">
+        <div style="margin-top: 10px;">SIGN UP</div>
+      </h2>
+      <TT>-USING-</TT>
+      {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+
+      <TT>-OR-</TT><br><br>
+      
+      <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="fieldWrapper">
+        {{ field.errors }}
+        {{ field.label_tag }} {{ field }}
+        </div>
+        {% endfor %}
+       {% comment %} {% include 'includes/form.html' %} {% endcomment %}
+       <br>
+        <button class="btn btn-primary" type="submit" style="width: 140px;">SIGN UP</button>
+      </form>
+
+      <br>
+      <div style="text-decoration: none; color: #222831;">Already a member? <a href="{{ login_url }}">Log in</a></div>
+   </div>
+   <br><br>
+  </center>
+
+{% endblock content %}

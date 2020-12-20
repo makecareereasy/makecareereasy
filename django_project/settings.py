@@ -39,8 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'accounts',
     'personality',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +76,13 @@ TEMPLATES = [
         },
     },
 ]
+
+# Google All-auth
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
@@ -138,6 +150,21 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/personality/home/'
 LOGOUT_REDIRECT_URL = '/'
 
+
+# Auth Urls
+SITE_ID = 1
+
+# Provider specific settings
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': '82394834603-b94t7fc7hjl8f1941elgj2tuip5dl6ke.apps.googleusercontent.com',
+            'secret': 'FZLhI1yk9rIAS_b484d4MEga',
+            'key': ''
+        }
+    }
+}
+
 #(SMTP)email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -145,3 +172,10 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True 
 EMAIL_HOST_USER = 'careerchela@gmail.com'
 EMAIL_HOST_PASSWORD = ''
+
+
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_UNIQUE = True
+#ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS=7
+#ACCOUNT_EMAIL_VERIFICATION = "mandatory"
