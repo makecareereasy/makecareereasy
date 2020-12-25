@@ -5,6 +5,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.urls import reverse
 from django.core.mail import send_mail
+from django.core.mail import EmailMessage
+from django.conf import settings
+from django.template.loader import render_to_string
 
 class Home(TemplateView):
     template_name = 'home.html'
@@ -29,14 +32,14 @@ def contact(request):
             message_name,                #subject
             message,                     #email body
             message_email,               #from 
-            ['careerchela@gmail.com'],   #to
+            [settings.EMAIL_HOST_USER],  #to
             fail_silently = False)
         subject_user = 'Welcome to Careerchela!'
         message_user = 'Thanks for writing to us, we will get back to you soon!' 
         send_mail(
             subject_user, 
             message_user, 
-            'careerchela@gmail.com', 
+            settings.EMAIL_HOST_USER, 
             [message_email], 
             fail_silently = False)
 
