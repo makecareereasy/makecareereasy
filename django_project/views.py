@@ -35,7 +35,7 @@ def contact(request):
             [settings.EMAIL_HOST_USER],  #to
             fail_silently = False)
         subject_user = "Welcome to MakeCareerEasy!"
-        message = 'Hi there,\r\r\nMakeCareerEasy is proud a provide free or low-cost career and personality assessments for charities, non-profits, and schools. If you need to provide reliable career guidance to disadvantaged students or adults, we are here to help.\r\r\nBased on Validated Theories Make Career Easy psychometric assessments are a product of hard research and strong alignment to renown psychometric theories and get hired at right place.\r\r\nThanks for writing to us, we will get back to you soon!\r\r\nTeam MakeCareerEasy'
+        message = 'Hi there,\r\r\nMakeCareerEasy is a proud provide free or low-cost career and personality assessments website for charities, non-profits, and schools. If you need to provide reliable career guidance to disadvantaged students or adults, we are here to help.\r\r\nBased on validated theories MakeCareerEasy psychometric assessments are a product of hard research and strong alignment to renown psychometric theories and get hired at right place.\r\r\nThanks for writing to us, we will get back to you soon!\r\r\nTeam MakeCareerEasy'
         send_mail(
             subject_user, 
             message,
