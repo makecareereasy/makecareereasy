@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.urls import reverse
 from django.core.mail import send_mail
-from django.core.mail import EmailMessage
+#from django.core.mail import EmailMessage
 from django.conf import settings
 from django.template.loader import render_to_string
 
@@ -34,11 +34,11 @@ def contact(request):
             message_email,               #from 
             [settings.EMAIL_HOST_USER],  #to
             fail_silently = False)
-        subject_user = 'Welcome to MakeCareerEasy!'
-        message_user = 'Thanks for writing to us, we will get back to you soon!' 
+        subject_user = "Welcome to MakeCareerEasy!"
+        message = 'Hi there,\r\r\nMakeCareerEasy is proud a provide free or low-cost career and personality assessments for charities, non-profits, and schools. If you need to provide reliable career guidance to disadvantaged students or adults, we are here to help.\r\r\nBased on Validated Theories Make Career Easy psychometric assessments are a product of hard research and strong alignment to renown psychometric theories and get hired at right place.\r\r\nThanks for writing to us, we will get back to you soon!\r\r\nTeam MakeCareerEasy'
         send_mail(
             subject_user, 
-            message_user, 
+            message,
             settings.EMAIL_HOST_USER, 
             [message_email], 
             fail_silently = False)
