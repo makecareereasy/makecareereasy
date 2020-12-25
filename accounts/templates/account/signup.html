@@ -17,18 +17,13 @@
       
       <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
-        {% for field in form %}
-        <div class="fieldWrapper">
-        {{ field.errors }}
-        {{ field.label_tag }} {{ field }}
-        </div>
-        {% endfor %}
-       {% comment %} {% include 'includes/form.html' %} {% endcomment %}
-       <br>
-        <button class="btn btn-primary" type="submit" style="width: 140px;">SIGN UP</button>
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="btn btn-primary" type="submit">{% trans "Sign Up" %} &raquo;</button>
       </form>
-
-      <br>
+            <br>
       <div style="text-decoration: none; color: #222831;">Already a member? <a href="{{ login_url }}">Log in</a></div>
    </div>
    <br><br>

@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'fe)@7j8h$mef+#313m@*8o8x^o#+i1yd=6b9#3@z*x8n0q1kwx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'careerchela.com','www.careerchela.com', '34.67.247.179', 'careerchela.herokuapp.com']
 
@@ -168,10 +168,12 @@ SOCIALACCOUNT_PROVIDERS = {
 #(SMTP)email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True 
-EMAIL_HOST_USER = 'careerchela@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'visions1890@gmail.com'
+EMAIL_HOST_PASSWORD = 'Careerchela1.2'
+
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
