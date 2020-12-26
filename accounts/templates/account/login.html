@@ -10,9 +10,16 @@
     <div class="login-container">
         <h2 div="login">LOGIN</h2>
         <p style="margin-left: 25.5;" class="text1">USING</p>
-        {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+        <div class="google-btn" style="padding-top: 5px;">
+          <div class="google-icon-wrapper">
+            <img class="google-icon-svg" style="margin-top: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+        </div>
+         {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+        </div>
         <p style="margin-left: 40.5;" class="text2" >OR</p>
+        
         {% include "socialaccount/snippets/login_extra.html" %}
+          
         {% else %}
         <p>Please <a href="{{ signup_url }}">sign up</a> first.</p>
         {% endif %}
