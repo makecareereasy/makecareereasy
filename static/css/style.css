@@ -9946,12 +9946,41 @@ textarea.form-control {
          cursor: pointer;
          text-align: center;
          box-shadow: 2px 5px 5px #333333; }
-/*contact form*/
+/*contact page*/
  .contactform{
-  border:outset;
-  padding-top: 10px ;
+   border:solid 1px rgba(123,124,122,.22);
+   border-radius:5px;
+   padding-top: 10px ;
   padding-bottom: 10px;
 }
+.icon{
+  height:50px;
+}
+
+#mail
+{
+  height:45px;
+}
+.desc{
+
+  margin-left:0;
+  padding-left:0;
+}
+.divider{
+  border-left: solid;
+  width:5%;
+}
+@media(max-width: 576px)
+{
+  .divider{
+    display:none;
+  }
+}
+.form-control{
+  box-shadow: 0 2px 6px 0 rgba(123,124,122,.15), 0 13px 12px -11px rgba(180,181,176,.32) !important;
+}
+
+
 @media(max-width: 576px)
 {
   .icon{
