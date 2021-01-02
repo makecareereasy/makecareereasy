@@ -26,9 +26,11 @@
 </center>
 <br> <br>
 <!--Contact Form Start-->
+
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    
+    <div class="col-md-5 ">
       <h3 class="font-weight-bold">Get in touch for further details.</h3>
       <div class="row">
         <img class="img-fluid col-md-2 col-sm-2 icon" id="mappointer" src="/static/images/map-pointer.png">
@@ -42,21 +44,22 @@
       <div class="row">
         <img class="img-fluid col-md-2 col-sm-2 icon" id="phone" src="/static/images/phone.png">
         <div class="col-md-10 col-sm-10 desc">
-          <div class="col-md-12">+91 9975667652, 7749822663</div>
+          <div class="col-md-12  pt-2">+91 9975667652, 7749822663</div>
         </div>
       </div>
       <br/>
       <div class="row">
         <img class="img-fluid col-md-2 col-sm-2 icon" id="mail" src="/static/images/mail.png">
         <div class="col-md-10 col-sm-10 desc">
-          <div class="col-md-12">careerchela@gmail.com</div>
+          <div class="col-md-12 pt-1">mcareere@gmail.com</div>
           
         </div>
       </div>
     </div>
+    <div class="container col-md-1 divider"></div>
     <br/>
     <!--contact form-->
-    <div class="col-md-6 contactform"  >
+    <div class="col-md-6 contactform">
       <form action="{% url 'contact.html' %}" method="post">
         {% csrf_token %}
         
@@ -80,12 +83,14 @@
           rows="3" placeholder="Message"></textarea>
         </div>
         <center>
-          <button type="submit" class="btn btn-primary col-3">Send Message</button>
+          <button type="submit" class="btn btn-primary col-md-4 col-sm-4">Send Message</button>
         </center>
       </form>
     </div>
   </div>
 </div>
+
+
 <!--Contact Form End-->
 <br>
 <br>
