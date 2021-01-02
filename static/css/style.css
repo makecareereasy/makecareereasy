@@ -11159,3 +11159,14 @@ textarea.form-control {
   -webkit-transition-timing-function: cubic-bezier(.445,.05,.55,.95);
   transition-timing-function: cubic-bezier(.445,.05,.55,.95);
 }
+
+.machine-content{
+	font-family:"Baloo Bhai 2";
+	font-size: 20px;
+	 box-sizing: border-box;
+	 margin:11px auto;
+	 padding:10;
+	 border-radius:25px;
+	 display:inline-block;
+  text-align: center;
+}

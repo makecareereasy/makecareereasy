@@ -49,3 +49,11 @@ def contact(request):
 
 def jobs(request):
     return render(request,'jobs.html')
+def ml(request):
+    return render(request,'machine.html')
+
+def data(request):
+    return render(request,'datastructure.html')
+
+def iot(request):
+    return render(request,'internetofthings.html')
