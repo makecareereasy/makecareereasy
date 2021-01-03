@@ -77,6 +77,10 @@ TEMPLATES = [
     },
 ]
 
+
+ACCOUNT_FORMS = {'signup': 'accounts.forms.MyCustomSignupForm'}
+
+
 # Google All-auth
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -176,8 +180,9 @@ EMAIL_HOST_PASSWORD = 'Careerchela1.2'
 
 
 
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_REQUIRED = True
+SOCIALACCOUNT_QUERY_EMAIL = True
+# ACCOUNT_AUTHENTICATION_METHOD = 'email'
+# ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_UNIQUE = True
 #ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS=7
 #ACCOUNT_EMAIL_VERIFICATION = "mandatory"

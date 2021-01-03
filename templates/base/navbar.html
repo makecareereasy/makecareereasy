@@ -58,7 +58,7 @@
         <li class="nav-item"><a href="{% url 'team.html' %}" class="nav-link">Team</a></li>
 
         {% if request.user.is_authenticated %}
-            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log Out</a></li>
+            <li class="nav-item"><a href="{% url 'account_logout' %}" class="nav-link">Log Out</a></li>
         {% else %}
             <li class="nav-item"><a href="{% url 'account_login' %}" class="nav-link">Log In</a></li>
 

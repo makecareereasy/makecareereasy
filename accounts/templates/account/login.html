@@ -4,34 +4,41 @@
 {% block title %}Log in{% endblock %}
 
 {% block content %}
-{% get_providers as socialaccount_providers %}
-{% if socialaccount_providers %}
 <center>
-    <div class="login-container">
-        <h2 div="login">LOGIN</h2>
-        <p style="margin-left: 25.5;" class="text1">USING</p>
-        {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-        <p style="margin-left: 40.5;" class="text2" >OR</p>
-        {% include "socialaccount/snippets/login_extra.html" %}
-        {% else %}
-        <p>Please <a href="{{ signup_url }}">sign up</a> first.</p>
-        {% endif %}
-        
+</br>
+    <div id="profile-container">
+        <h2 class="reset-heading">
+        <div style="margin-top: 10px;">LOG IN</div>
+        </h2>
+        <TT>-USING-</TT> 
+        {% load account socialaccount %}
+        {% get_providers as socialaccount_providers %}
+          {% for provider in socialaccount_providers %}
+            <p>
+            <a title="{{provider.name}}" class="btn btn-dark" 
+            href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">
+            <i class="fa fa-{{provider.name}}" id="social_icon"></i>{{provider.name}}</a>
+            </p>
+          {% endfor %}
+        <TT>-OR-</TT>
         
         <form action="{% url 'account_login' %}" method="post">
-            {% csrf_token %}
-          {{ form.as_p }}
-          <button class="btn btn-primary" type="submit">LOG IN</button> 
+          {% csrf_token %}
+          <div class="form-margin">
+          <input id="id_login" name="login" type="text" placeholder="Username" class="inp"> {{ form.login.errors }}
+          </div>
+          <div class="form-margin">
+          <input id="id_password" name="password" type="password" placeholder="Password" class="inp"> {{ form.password.errors }}
+          </div>
+          <button class="reset-button" type="submit" style="width: 140px;">LOG IN</button>	
         </form>
 
         <div class="login-submit-container">
-        <a class="btn btn-link" href="{% url 'account_reset_password' %}">Forgot Password?</a>
-        <p class="sign-up">Not a member? <a href="{{ signup_url }}" style="color: #00a8cc;">Sign Up</a></p>
-      </div>
-
-     </div>
-     <div>
+        <a class="btn btn-dark" href="{% url 'account_reset_password' %}">Forgot Password?</a>
+        </div>
+        <p >Not a member? <a href="{{ signup_url }}" style="color: #00a8cc;">Sign Up</a></p>
     </div>
+    
   </center>
-
+    </br> </br> </br>
 {% endblock content %}

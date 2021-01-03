@@ -3,36 +3,48 @@
 {% block title %}Sign In{% endblock %}
 
 {% block content %}
-
-  <center>
-      <br>
-    <div id="profile-container">
+<center>
+<br>
+  <div id="profile-container">
       <h2 class="reset-heading">
-        <div style="margin-top: 10px;">SIGN UP</div>
+      <div style="margin-top: 10px;">SIGN UP</div>
       </h2>
-      <TT>-USING-</TT>
-      {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-
-      <TT>-OR-</TT><br><br>
-      
+      <TT>-USING-</TT> </br>
+      {% load account socialaccount %}
+      {% get_providers as socialaccount_providers %}
+          {% for provider in socialaccount_providers %}
+            <p>
+            <a title="{{provider.name}}" class="btn btn-dark" 
+            href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">
+            <i class="fa fa-{{provider.name}}" id="social_icon"></i>{{provider.name}}</a>
+            </p>
+          {% endfor %}
+      <TT>-OR-</TT>
       <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-        {% csrf_token %}
-         {% for field in form %}	       
-        <div class="fieldWrapper">	       
-        {{ field.errors }}	
-
-        {{ field.label_tag }} {{ field }}	        
-        </div>	
-
-        {% endfor %}		
-       <br>	
-        <button class="btn btn-primary" type="submit" style="width: 140px;">SIGN UP</button>	
+          {% csrf_token %}
+          <div class="form-margin">
+          <input id="id_first_name" name="first_name" type="text" placeholder="First name" class="inp"> {{ form.first_name.errors }}
+          </div>
+          <div class="form-margin">
+          <input id="id_last_name" name="last_name" type="text" placeholder="Last name" class="inp"> {{ form.last_name.errors }}
+          </div>
+          <div class="form-margin">
+          <input id="id_email" name="email" type="email" placeholder="E-mail address" class="inp"> {{ form.email.errors }}
+          </div>
+          <div class="form-margin">
+          <input id="id_username" name="username" type="text" placeholder="Username" class="inp"> {{ form.username.errors }}
+          </div>
+          <div class="form-margin">
+          <input id="id_password1" name="password1" type="password" placeholder="Password" class="inp"> {{ form.password1.errors }}
+          </div>
+          <div class="form-margin">
+          <input id="id_password2" name="password2" type="password" placeholder="Confirm Password" class="inp"> {{ form.password2.errors }}
+          </div>
+          <button class="reset-button" type="submit" style="width: 140px;">SIGN UP</button>	
       </form>	     
-
       <br>
       <div style="text-decoration: none; color: #222831;">Already a member? <a href="{{ login_url }}">Log in</a></div>
-   </div>
-   <br><br>
-  </center>
-
+      </div>
+<br><br>
+</center>
 {% endblock content %}
