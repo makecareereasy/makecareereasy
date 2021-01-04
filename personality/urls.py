@@ -7,6 +7,7 @@ from django.conf.urls import url
 from personality import views
 
 urlpatterns = [
+    path('detect', views.capture, name='facedetect'),
     path('home/', login_required (TemplateView.as_view(
         template_name='personality/home.html'
     )), name='personality_home'),

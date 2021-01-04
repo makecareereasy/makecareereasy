@@ -170,13 +170,21 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 #(SMTP)email
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+'''EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'visions1890@gmail.com'
-EMAIL_HOST_PASSWORD = 'Careerchela1.2'
+EMAIL_HOST_PASSWORD = 'Careerchela1.2' '''
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'finvision12@gmail.com'
+EMAIL_HOST_PASSWORD = 'jlxevvimjdhfdwla' #past the key or password app here
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Mailapp Django'
 
 
 
