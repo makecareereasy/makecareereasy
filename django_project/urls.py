@@ -47,6 +47,16 @@ urlpatterns = [
 
     path('courses/iot/',views.iot,name='internetofthings.html'),
 
+    path('courses/polsci/',views.iot,name='politicalscience.html'),
+
+    path('courses/eeng/',views.iot,name='eengineering.html'),
+
+    path('courses/mmanage/',views.iot,name='mmanagement.html'),
+
+    path('courses/gdesign/',views.iot,name='gdesign.html'),
+
+    path('courses/hrmanage/',views.iot,name='hrmanage.html'),
+
     path('personality/', include('personality.urls')),
     path('', include('accounts.urls')),
 ]

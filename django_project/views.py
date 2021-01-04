@@ -57,3 +57,18 @@ def data(request):
 
 def iot(request):
     return render(request,'internetofthings.html')
+
+def polsci(request):
+    return render(request,'politicalscience.html')
+
+def eeng(request):
+    return render(request,'eengineering.html')
+
+def mmanage(request):
+    return render(request,'mmanagement.html')
+
+def gdesign(request):
+    return render(request,'gdesign.html')
+
+def hrmanage(request):
+    return render(request,'hrmanage.html')
