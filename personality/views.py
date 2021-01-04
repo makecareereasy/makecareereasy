@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import cv2
 import sys
+import time
 
 from django.shortcuts import render, redirect
 from django.views import View
@@ -247,12 +248,12 @@ def capture(request):
     video_capture = cv2.VideoCapture(0)
 
     ##4.35seconds
-    count=0
-    while count<=50:
+    found = False
+    start = time.time()
+    while int(time.time()-start) <= 7:
         # Capture frame-by-frame
         ret, frame = video_capture.read()
-        if face_extractor(frame) is not None:
-            count+=1
+        if face_extractor(frame) is not None:            
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
             faces = face_classifier.detectMultiScale(gray, 1.3, 5)
@@ -260,10 +261,12 @@ def capture(request):
             for (x, y, w, h) in faces:
                 cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
                 cv2.putText(frame, "Detected Candidate", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)                
+                found=True           
+
         else:
-            cv2.putText(frame, "No Detected Candidate", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)  
-
-
+            cv2.putText(frame, "No Detected Candidate", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
+            if(int(time.time()-start)>=7 and found==False):
+                break       
 
 
         # Display the resulting frame
@@ -275,7 +278,10 @@ def capture(request):
     # When everything is done, release the capture
     video_capture.release()
     cv2.destroyAllWindows()
-    if not request.user.applicant.taken_apt_test:
-        return redirect('aptitude_test')
-    elif not request.user.applicant.taken_personality_test:
-        return redirect('personality_test')
+    if(found == True):
+        if not request.user.applicant.taken_apt_test:
+            return redirect('aptitude_test')
+        elif not request.user.applicant.taken_personality_test:
+            return redirect('personality_test')
+    else:
+        return redirect('/personality/home')
