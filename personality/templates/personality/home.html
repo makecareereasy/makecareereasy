@@ -8,9 +8,9 @@
     <h1 class="congo-heading">Hello {{ request.user.username }}</h1>
     <p class="congo-content">You are to complete an aptitude and personality test.</p>
     {% if not request.user.applicant.taken_apt_test %}
-    <div><a class="congo-button" href="{% url 'aptitude_test' %}">Aptitude Test</a></div>
+    <div><a class="congo-button" href="/personality/detect">Aptitude Test</a></div>
     {% elif not request.user.applicant.taken_personality_test %}
-    <div><a class="congo-button" href="{% url 'personality_test' %}">Take Your Personality Test</a></div>
+    <div><a class="congo-button" href="/personality/detect">Take Your Personality Test</a></div>
     {% else %}
     <div class="alert alert-info messages" style="width: 75%; margin-top: 100px;">
         <span class="alert-info">
