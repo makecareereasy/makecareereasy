@@ -8412,7 +8412,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .3;
-    background: #f1453d; }
+    background: #8ca8e6; }
   .hero-wrap.hero-wrap-2 {
     height: 300px; }
     .hero-wrap.hero-wrap-2 .slider-text {
@@ -11170,3 +11170,9 @@ textarea.form-control {
 	 display:inline-block;
   text-align: center;
 }
+
+.faceD-back-img {
+  width: 1000px;
+  height: 500px;
+  background-size: 1000px 500px;
+  background-repeat: no-repeat; }

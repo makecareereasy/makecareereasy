@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<br>
+  <center>
+<div class="faceD-back-img" style="background-image: url('/static/images/wrong-1.jpg');">
+    <h1 class="congo-heading" style="color: black; padding-top: 60px;">Sorry {{ request.user.username }}</h1>
+    <p class="congo-content" style="margin-top: 267px; color: aliceblue">Unable to detect your face! Try Again!</p>
+    <div><a class="btn btn-primary btn-lg" style="margin-top:; background: #5d50c6;" href="{% url 'home.html' %}">Retry</a></div>
+</div>
+  </center>
+      <br>
+{% endblock content %}
