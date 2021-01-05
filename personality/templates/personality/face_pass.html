@@ -10,12 +10,6 @@
     <div><a class="btn btn-primary btn-lg" style="margin-top: 267px; background: #5d50c6;" href="/personality/detect">Aptitude Test</a></div> <!--previous href: {% url 'aptitude_test' %}-->
     {% elif not request.user.applicant.taken_personality_test %}
     <div><a class="btn btn-primary btn-lg" href="/personality/detect">Personality Test</a></div> <!--previous href: {% url 'personality_test' %}-->
-    {% else %}
-    <div class="alert alert-info messages" style="width: 75%; margin-top: 100px;">
-        <span class="alert-info">
-            You have already completed all tests. We would get back to you via email, Thanks.
-        </span>
-    </div>
     {% endif %}
 </div>
   </center>

@@ -20,7 +20,15 @@
       Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.
     </p>
     {% if user.is_authenticated %}
+
+      {% if not request.user.applicant.taken_apt_test %}
         <div class="test-button-property"><a class="test-button" href="{% url 'personality_home' %}">START TEST</a></div>
+      {% elif not request.user.applicant.taken_personality_test %}
+        <div class="test-button-property"><a class="test-button" href="{% url 'personality_home' %}">START TEST</a></div>
+      {% else %}
+      <div class="test-button-property"><a class="test-button" href="{% url 'test_verify.html' %}">START TEST</a></div> <!--someone pls link : href="test_verify.html"-->
+      {% endif %}
+    
     {% else %}
         <div class="test-button-property"><a class="test-button" href="{% url 'account_signup' %}">START TEST</a></div>
     {% endif %}
@@ -30,7 +38,15 @@
 		<p class="test-content">This platform is used to access prospective applicants and verify whom is more suitable for employment.<br><br>
 			Take your tests. The tests is for only job applicants. Please note that your results would not be shown to you.</p>
       {% if user.is_authenticated %}
-        <div class="test-button-property"><a class="test-button" href="{% url 'personality_home' %}">START TEST</a></div>
+
+        {% if not request.user.applicant.taken_apt_test %}
+          <div class="test-button-property"><a class="test-button" href="{% url 'personality_home' %}">START TEST</a></div>
+        {% elif not request.user.applicant.taken_personality_test %}
+          <div class="test-button-property"><a class="test-button" href="{% url 'personality_home' %}">START TEST</a></div>
+        {% else %}
+        <div class="test-button-property"><a class="test-button" href="{% url 'test_verify.html' %}">START TEST</a></div> <!--someone pls link : href="test_verify.html"-->
+        {% endif %}
+
      {% else %}
         <div class="test-button-property"><a class="test-button" href="{% url 'account_signup' %}">START TEST</a></div>
      {% endif %}
