@@ -7,9 +7,9 @@
 <div class="faceD-back-img" style="background-image: url('/static/images/right-1.jpg');">
     <h1 class="congo-heading" style="color: black; padding-top: 50px;">Congratulation {{ request.user.username }}</h1>
     {% if not request.user.applicant.taken_apt_test %}
-    <div><a class="btn btn-primary btn-lg" style="margin-top: 267px; background: #5d50c6;" href="{% url 'aptitude_test' %}">Aptitude Test</a></div>
+    <div><a class="btn btn-primary btn-lg" style="margin-top: 267px; background: #5d50c6;" href="/personality/detect">Aptitude Test</a></div>
     {% elif not request.user.applicant.taken_personality_test %}
-    <div><a class="btn btn-primary btn-lg" href="{% url 'personality_test' %}">Personality Test</a></div>
+    <div><a class="btn btn-primary btn-lg" href="/personality/detect">Personality Test</a></div>
     {% else %}
     <div class="alert alert-info messages" style="width: 75%; margin-top: 100px;">
         <span class="alert-info">
