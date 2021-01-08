@@ -279,9 +279,10 @@ def capture(request):
     video_capture.release()
     cv2.destroyAllWindows()
     if(found == True):
-        if not request.user.applicant.taken_apt_test:
-            return redirect('aptitude_test')
-        elif not request.user.applicant.taken_personality_test:
-            return redirect('personality_test')
+        return render(request, 'face_pass.html')
     else:
-        return redirect('/personality/home')
+        return render(request, 'face_fail.html')
+
+
+def modalPage(request):
+    return render(request, 'modal.html')
