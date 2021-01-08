@@ -280,13 +280,8 @@ def capture(request):
     cv2.destroyAllWindows()
     if(found == True):
         return render(request, 'face_pass.html')
-        ''''if not request.user.applicant.taken_apt_test:
-            return redirect('aptitude_test')
-        elif not request.user.applicant.taken_personality_test:
-            return redirect('personality_test')'''
     else:
         return render(request, 'face_fail.html')
-        #return redirect('/personality/home')
 
 
 def modalPage(request):
