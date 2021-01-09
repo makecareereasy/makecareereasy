@@ -9995,7 +9995,7 @@ textarea.form-control {
     margin: 10px 10px 10px 10px;
   }
 } 
-
+/*contact page end*/
 
   .ftco-footer {
     background: #CFEBFF;
@@ -10420,7 +10420,7 @@ textarea.form-control {
   left: 690px;
   width: 4px;
   height: 340px;
-  background-color: purple;
+  background-color:rgb(3,90,166);
   -ms-transform: rotate(-44deg);
   -webkit-transform: rotate(-44deg);
   transform: rotate(-44deg);
@@ -10435,7 +10435,7 @@ textarea.form-control {
   left: 450px;
   width: 4px;
   height: 340px;
-  background-color:purple;
+  background-color:rgb(3,90,166);
   -ms-transform: rotate(44deg);
   -webkit-transform: rotate(44deg);
   transform: rotate(44deg);
