@@ -1,343 +1,329 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block style %}
-	<style type="text/css">
-		.rect {
-	  position: relative;
-	  z-index: 1;
-	  background: white;
-	  width: 17rem;
-	  height: 12rem;
-	  padding-top: 3.5vmin;
-	  margin: 1rem;
-	  border-radius: 0.5em;
-	  box-shadow: 1px 2px 50px 0px ;
-	}
-	.rect h1 {
-	  font-size: 3rem;
-	  color: tomato;
+<style type="text/css">
+	
+
+	.rect {
+		position: relative;
+		z-index: 1;
+		background: white;
+		width: 17rem;
+		height: 12rem;
+		padding-top: 3.5vmin;
+		margin: 1rem;
+		border-radius: 0.5em;
+		box-shadow: 1px 2px 50px 0px;
 	}
 
-	</style>
+	.rect h1 {
+		font-size: 3rem;
+		color: tomato;
+	}
+
+	.home-border {
+		border: rgb(3, 90, 166) solid 6px;
+		border-style: none none solid none;
+	}
+</style>
 {% endblock %}
 {% block content %}
 
 
-    <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(/static/images/edu1.jpg);">
-      	<div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-            <h1 class="mb-4">Education Needs Complete Solution</h1>
-            <p>Discover your stream and subject combination through a comprehensive assesment of your strengths.</p>
-            <p><a href="{% url 'contact.html' %}" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-          </div>
-        </div>
-        </div>
-      </div>
-
-      <div class="slider-item" style="background-image:url(/static/images/passion.jpg);">
-      	<div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-            <h1 class="mb-4">Pursue Your Passion </h1>
-            <p>Your Career path needs to reflect your goals and needs.</p>
-            <p><a href="{% url 'contact.html' %}" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
-          </div>
-        </div>
-        </div>
-      </div>
-	</section>
-	<div class="testimonials-clean" style="height: 900px;">
-		<div class="container" style="height:1200px;">
-			<div class="intro">
-				<h2 class="text-center"style="border: purple solid 6px;border-style:none none solid none;" >Variety Of Fields</h2>
-
-			</div>
-			<div class="row text-left people" style="margin-right: -76px;margin-left: 95px;">
-				<div class="col-md-6 col-lg-4 col-xl-5 offset-xl-0 item" style="height: 263px;">
-					<div class="box testimonials-item ">
-						<p class="description"><strong>Discover your perfect stream and subject combinations through a  comprehensive assesments of your strengths and explore the right career </strong><br /><strong>opportunity aligned to your stream choice.</strong><br /></p>
-					</div>
-					<div class="author"><i class="fa fa-user" style="font-size: 41px;width: 60px;"></i>
-						<h5 class="name"><strong>For Childrens</strong><br /></h5>
-						<p class="title" style="color: rgb(10,16,18);font-size: 15px;">Stream &amp; Subject Selection<br /><br /></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 col-xl-5 item" style="height: 263px;">
-					<div class="box testimonials-item">
-						<p class="description"><strong>Discover your Perfect Career based on your Unique strengths &amp; abilities, and get expert Career Counselling on your targeted career </strong><br /><strong>option to plan your course and college</strong><br /></p>
-					</div>
-					<div class="author"><i class="fa fa-book" style="font-size: 41px;"></i>
-						<h5 class="name">For College Students<br /></h5>
-						<p class="title" style="color: rgb(24,29,31);font-size: 15px;">Selection and Planning</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 col-xl-5 item">
-					<div class="box testimonials-item">
-						<p class="description"style="padding-bottom:26px;"><strong>Evaluate and ascertain your suitability for suggested stream/careers with Interactive activities.<br>Zero-in on your perfect by matching specific  insights about your daily schedule, Work style, and more, with  your best-fit matches.</strong><br
-							/></p>
-					</div>
-					<div class="author"><i class="fa fa-users" style="font-size: 41px;"></i>
-						<h5 class="name">Interactive Stream &amp; Career Activities<br /></h5>
-						<p class="title" style="color: rgb(12,17,18);font-size: 15px;">Activity Selection</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 col-xl-5 item">
-					<div class="box testimonials-item">
-						<p class="description"><br /><strong>Discover your next Career Move, accurately matched to your skills, interests and career goals through our comprehensive 5-Dimensional assesments and specialized career counselling.</strong><br /><br /></p>
-					</div>
-					<div class="author"><i class="fa fa-user-secret" style="font-size: 41px;"></i>
-						<h5 class="name">Graduates</h5>
-						<p class="title" style="color: rgb(12,20,24);font-size: 15px;">Career and Selection</p>
-					</div>
+<section class="home-slider owl-carousel">
+	<div class="slider-item" style="background-image:url(/static/images/edu1.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-start"
+				data-scrollax-parent="true">
+				<div class="col-md-6 ftco-animate">
+					<h1 class="mb-4">Education Needs Complete Solution</h1>
+					<p>Discover your stream and subject combination through a comprehensive assesment of your strengths.
+					</p>
+					<p><a href="{% url 'contact.html' %}" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-<!-- Paradise Slider -->
-<div id="testimonial_095" style="height: 550px; padding-top:50px; " class="carousel slide testimonial_095_indicators testimonial_095_control_button thumb_scroll_x swipe_x ps_easeOutSine" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-
-	<!-- Header of Slider -->
-	
-	<div class="testimonial_095_header"style="padding-bottom:50px;">
-		<h2 class="text-center"style="border: purple solid 6px;border-style:none none solid none;padding-bottom:20px" >Things That Matter In Your Career</h2>
-	
-		<p style="color: wheat;">What do you think realizing money is everything?</p>
-	</div>
-	<!-- /Header of Slider -->
-
-	<!-- Indicators -->
-	<ol class="carousel-indicators">
-		<li data-target="#testimonial_095" data-slide-to="0" class="active"></li>
-		<li data-target="#testimonial_095" data-slide-to="1"></li>
-		<li data-target="#testimonial_095" data-slide-to="2"></li>
-	</ol>
-
-	<!-- Wrapper For Slides -->
-	<div class="carousel-inner" role="listbox">
-
-		<!-- First Slide -->
-		<div class="carousel-item active">
-			<!-- Text Layer -->
-			<div class="testimonial_095_slide">
-				<a href="#"><span class="flaticon-security"></span></a>
-				<p>Do you really need five cars for you and your spouse in the driveway?</p>
-				<h5><a href="#">Identify Need</a></h5>
-			</div> <!-- /Text Layer -->
-		</div> <!-- /item -->
-		<!-- End of First Slide -->
-
-		<!-- Second Slide -->
-		<div class="carousel-item">
-			<!-- Text Layer -->
-			<div class="testimonial_095_slide">
-				<a href="#"><span class="flaticon-education"></span></a>
-			<p>Sports is one of the rewarding career options of the country with lots of job opportunities.</p>
-				<h5><a href="#">Career and Sports</a></h5>
-			</div> <!-- /Text Layer -->
-		</div> <!-- /item -->
-		<!-- End of Second Slide -->
-		
-		
-		<div class="carousel-item">
-		
-			<div class="testimonial_095_slide">
-				<a href="#"><span class="flaticon-reading"></span></a>
-				<p>Begin by looking at the type of place you’d prefer to spend your working days. Would you like to join a huge corporation?</p>
-				<h5><a href="#">Environment</a></h5>
+	<div class="slider-item" style="background-image:url(/static/images/passion.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-start"
+				data-scrollax-parent="true">
+				<div class="col-md-6 ftco-animate">
+					<h1 class="mb-4">Pursue Your Passion </h1>
+					<p>Your Career path needs to reflect your goals and needs.</p>
+					<p><a href="{% url 'contact.html' %}" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p>
+				</div>
 			</div>
-		</div> 
+		</div>
+	</div>
+</section>
+<div class="testimonials-clean" style="height: 900px;">
+	<div class="container" style="height:1200px;">
+		<div class="intro">
+			<h2 class="text-center home-border">Variety Of Fields</h2>
 
-	</div> 
+		</div>
+		<div class="row text-left people" style="margin-right: -76px;margin-left: 95px;">
+			<div class="col-md-6 col-lg-4 col-xl-5 offset-xl-0 item" style="height: 263px;">
+				<div class="box testimonials-item ">
+					<p class="description"><strong>Discover your perfect stream and subject combinations through
+							a  comprehensive assesments of your strengths and explore the right career
+						</strong><br /><strong>opportunity aligned to your stream choice.</strong><br /></p>
+				</div>
+				<div class="author"><i class="fa fa-user" style="font-size: 41px;width: 60px;"></i>
+					<h5 class="name"><strong>For Childrens</strong><br /></h5>
+					<p class="title" style="color: rgb(10,16,18);font-size: 15px;">Stream &amp; Subject
+						Selection<br /><br /></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-5 item" style="height: 263px;">
+				<div class="box testimonials-item">
+					<p class="description"><strong>Discover your Perfect Career based on your Unique strengths &amp;
+							abilities, and get expert Career Counselling on your targeted career
+						</strong><br /><strong>option to plan your course and college</strong><br /></p>
+				</div>
+				<div class="author"><i class="fa fa-book" style="font-size: 41px;"></i>
+					<h5 class="name">For College Students<br /></h5>
+					<p class="title" style="color: rgb(24,29,31);font-size: 15px;">Selection and Planning</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-5 item">
+				<div class="box testimonials-item">
+					<p class="description" style="padding-bottom:26px;"><strong>Evaluate and ascertain your suitability
+							for suggested stream/careers with Interactive activities.<br>Zero-in on your perfect by
+							matching specific insights about your daily schedule, Work style, and more, with  your
+							best-fit matches.</strong><br /></p>
+				</div>
+				<div class="author"><i class="fa fa-users" style="font-size: 41px;"></i>
+					<h5 class="name">Interactive Stream &amp; Career Activities<br /></h5>
+					<p class="title" style="color: rgb(12,17,18);font-size: 15px;">Activity Selection</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-5 item">
+				<div class="box testimonials-item">
+					<p class="description"><br /><strong>Discover your next Career Move, accurately matched to your
+							skills, interests and career goals through our comprehensive 5-Dimensional assesments and
+							specialized career counselling.</strong><br /><br /></p>
+				</div>
+				<div class="author"><i class="fa fa-user-secret" style="font-size: 41px;"></i>
+					<h5 class="name">Graduates</h5>
+					<p class="title" style="color: rgb(12,20,24);font-size: 15px;">Career and Selection</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-	
-	<a class="carousel-control-prev" href="#testimonial_095" data-slide="prev">
-		<span class="flaticon-security"></span>
-	</a>
-
-	
-	<a class="carousel-control-next" href="#testimonial_095" data-slide="next">
-		<span class="flaticon-security"></span>
-	</a>
-
-</div> <!-- End Paradise Slider -->
 
 
-
-<!-- End -->
-
-		
-
-				<section class="ftco-section bg-light"style="overflow:hidden">
-					<div class="container">
-						<div class="row">
-						  <div class="col-lg-12">
-							<h2 class="mb-4"style="border: purple solid 6px;border-style:none none solid none;text-align:center;border-width:5px;  font-weight: bold;
-							margin-bottom: 40px;padding-top: 40px;font-color:black"><span>Path to make Career Easy</span></h2>
-							<p style="text-align: center;margin-bottom: 3rem;">Based on Validated Theories
-		Career Chela psychometric assessments are a product of hard research and strong alignment to renown psychometric theories and get hired at right place.</p>
-							<ul class="timeline">
-							  <li>
-								<div class="timeline-image">
-								  <img class="img-circle img-responsive"style="border-radius:100%;height:205px;width:200px;margin-top:-7px;margin-left:-7px" src="/static/images/wom.jpg" alt="">
-								</div>
-								<div class="timeline-panel">
-								  <div class="timeline-heading">
-									<h2>Career Guidance</h4>
-								  </div>
-								  <div class="timeline-body">
-									<p class="text-muted"style="text-align:rught;">
-										Individuals to help them acquire the knowledge, information, skills, and experience necessary to identify career options. Results in their social, financial and emotional well-being throughout..
-										<p class="mb-0" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-									</p>
-								  </div>
-								</div>
-								<div class="line"style="color:purple"></div>
-							  </li>
-							  <li class="timeline-inverted">
-								<div class="timeline-image">
-								  <img class="img-circle img-responsive" style="border-radius:100%;height:205px;width:200px;margin-top:-7px;margin-left:-7px" src="/static/images/jobs.jpg" alt="">
-								</div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-									  <h2>Psychometric Testing and Employment</h2>
-									</div>
-									<div class="timeline-body">
-									  <p class="text-muted"style="text-align:rught;">
-										  Psychometric Testing and Employment For employers, psychometric testing could help to gauge the future performance of a candidate and hopefully improve employee retention by making successful hiring decisions.
-										  <p class="mb-0" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-										</p>
-									</div>
-								  </div>
-								<div class="line"></div>
-							  </li>
-							  <li>
-								<div class="timeline-image">
-								  <img class="img-circle img-responsive" style="border-radius:100%;height:205px;width:200px;margin-top:-7px;margin-left:-7px" src="/static/images/jobss.jpg" alt="">
-								</div>
-								<div class="timeline-panel">
-									<div class="timeline-heading">
-									  <h2>Job and Career</h2>
-									</div>
-									<div class="timeline-body">
-									  <p class="text-muted"style="text-align:rught;">
-										Discover your next Career Move, accurately matched to your skills, interests and career goals through our comprehensive 5-Dimensional assesments and specialized career counselling.
-										<p class="mb-0" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>  
-									</p>
-									</div>
-								  </div>
-								
-							</ul>
-						  </div>
+<section class="ftco-section bg-light" style="overflow:hidden">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="intro">
+					<center>
+						<h2 class="text-center home-border" style="width:50%;  font-weight: bold;
+							margin-bottom: 40px;padding-top: 40px;color:black">Path to make Career Easy</h2>
+					</center>
+				</div>
+				<p style="text-align: center;margin-bottom: 3rem;">Based on Validated Theories
+					Career Chela psychometric assessments are a product of hard research and strong alignment to renown
+					psychometric theories and get hired at right place.</p>
+				<ul class="timeline">
+					<li>
+						<div class="timeline-image">
+							<img class="img-circle img-responsive"
+								style="border-radius:100%;height:205px;width:200px;margin-top:-7px;margin-left:-7px"
+								src="/static/images/wom.jpg" alt="">
 						</div>
-					  </div>
-					</section>  
-					  <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/static/images/bg_3.jpg);" data-stellar-background-ratio="0.5">
-						<div class="container">
-							<div class="row justify-content-center mb-5 pb-2 d-flex">
-								<div class="col-md-6 align-items-stretch d-flex">
-									<div class="img img-video d-flex align-items-center" style="background-image: url(/static/images/about-2.jpg);">
-										<div class="video justify-content-center">
-												<a href="#" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-													<span class="ion-ios-play"></span>
-											  </a>
-											</div>
-									</div>
-								</div>
-						  <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
-							<h2 class="mb-4">"Success is not final; failure is not fatal: It is the courage to continue that counts."</h2>
-						  </div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h2>Career Guidance</h4>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted" style="text-align:right;">
+									Individuals to help them acquire the knowledge, information, skills, and experience
+									necessary to identify career options. Results in their social, financial and
+									emotional well-being throughout..
+								<p class="mb-0" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Read More
+										<span class="ion-ios-arrow-round-forward"></span></a></p>
+								</p>
+							</div>
 						</div>
-							<div class="row d-md-flex align-items-center justify-content-center">
-								<div class="col-lg-12">
-									<div class="row d-md-flex align-items-center">
-								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-									<div class="block-18">
-										<div class="icon"><span class="flaticon-doctor"></span></div>
-									  <div class="text">
-										<strong class="number" data-number="5">0</strong>
-										<span>Certified Teachers</span>
-									  </div>
-									</div>
-								  </div>
-								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-									<div class="block-18">
-										<div class="icon"><span class="flaticon-doctor"></span></div>
-									  <div class="text">
-										<strong class="number" data-number="100">0</strong>
-										<span>Students</span>
-									  </div>
-									</div>
-								  </div>
-								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-									<div class="block-18">
-										<div class="icon"><span class="flaticon-doctor"></span></div>
-									  <div class="text">
-										<strong class="number" data-number="227">227</strong>
-										<span>Jobs</span>
-									  </div>
-									</div>
-								  </div>
-								  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-									<div class="block-18">
-										<div class="icon"><span class="flaticon-doctor"></span></div>
-									  <div class="text">
-										<strong class="number" data-number="2">2</strong>
-										<span>Tests</span>
-									  </div>
-									</div>
-								  </div>
-							  </div>
-						  </div>
+						<div class="line" style="color:purple"></div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-image">
+							<img class="img-circle img-responsive"
+								style="border-radius:100%;height:205px;width:200px;margin-top:-7px;margin-left:-7px"
+								src="/static/images/jobs.jpg" alt="">
 						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h2>Psychometric Testing and Employment</h2>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted" style="text-align:rught;">
+									Psychometric Testing and Employment For employers, psychometric testing could help
+									to gauge the future performance of a candidate and hopefully improve employee
+									retention by making successful hiring decisions.
+								<p class="mb-0" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Read More
+										<span class="ion-ios-arrow-round-forward"></span></a></p>
+								</p>
+							</div>
 						</div>
-					</section>
-                <section>
-					  <h2 class="mb-4"style="border: purple solid 6px;border-style:none none solid none;text-align:center;border-width:5px;  font-weight: bold;
-					  margin-bottom:70px;padding-top: 40px;font-color:black;padding-bottom:14px"><span>Our Gallery</span></h2>
-				  <ul class="gallery_box">
-				  <li>
-				  <a href="#0"><img src="/static/images/course-5.jpg"style="height:500px;width:450px">
-				  <div class="box_data">
-				  <span>Doubt <br>Clearance</span>
-				  </div></a>
-				  </li>
-				  <li>
-				  <a href="#0"><img src="/static/images/course-4.jpg"style="height:320px;width:450px">
-				  <div class="box_data">
-				  <span>Mentors</span>
-				  </div></a>
-				  </li>
-				  <li>
-				  <a href="#0"><img src="/static/images/course-3.jpg"style="height:500px;width:420px">
-				  <div class="box_data">
-				  <span>Interactive<br>Sessions</span>
-				  </div></a>
-				  </li>
-				  <li>
-				  <a href="#0"><img src="/static/images/edu2.jpg"style="height:300px;width:430px">
-				  <div class="box_data">
-				  <span>Education</span>
-				  </div></a>
-				  </li>
-				  <li style="    position: relative;
+						<div class="line"></div>
+					</li>
+					<li>
+						<div class="timeline-image">
+							<img class="img-circle img-responsive"
+								style="border-radius:100%;height:205px;width:200px;margin-top:-7px;margin-left:-7px"
+								src="/static/images/jobss.jpg" alt="">
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h2>Job and Career</h2>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted" style="text-align:rught;">
+									Discover your next Career Move, accurately matched to your skills, interests and
+									career goals through our comprehensive 5-Dimensional assesments and specialized
+									career counselling.
+								<p class="mb-0" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Read More
+										<span class="ion-ios-arrow-round-forward"></span></a></p>
+								</p>
+							</div>
+						</div>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ftco-section ftco-counter img" id="section-counter"
+	style="background-image: url(/static/images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-2 d-flex">
+			<div class="col-md-6 align-items-stretch d-flex">
+				<div class="img img-video d-flex align-items-center"
+					style="background-image: url(/static/images/about-2.jpg);">
+					<div class="video justify-content-center">
+						<a href="#" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+							<span class="ion-ios-play"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
+				<h2 class="mb-4">"Success is not final; failure is not fatal: It is the courage to continue that
+					counts."</h2>
+			</div>
+		</div>
+		<div class="row d-md-flex align-items-center justify-content-center">
+			<div class="col-lg-12">
+				<div class="row d-md-flex align-items-center">
+					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18">
+							<div class="icon"><span class="flaticon-doctor"></span></div>
+							<div class="text">
+								<strong class="number" data-number="5">0</strong>
+								<span>Certified Teachers</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18">
+							<div class="icon"><span class="flaticon-doctor"></span></div>
+							<div class="text">
+								<strong class="number" data-number="100">0</strong>
+								<span>Students</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18">
+							<div class="icon"><span class="flaticon-doctor"></span></div>
+							<div class="text">
+								<strong class="number" data-number="227">227</strong>
+								<span>Jobs</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+						<div class="block-18">
+							<div class="icon"><span class="flaticon-doctor"></span></div>
+							<div class="text">
+								<strong class="number" data-number="2">2</strong>
+								<span>Tests</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="intro">
+					<center>
+						<h2 class="text-center home-border" style="width:50%;  font-weight: bold;
+								margin-bottom: 40px;padding-top: 40px;color:black">Our Gallery</h2>
+					</center>
+				</div>
+				<ul class="gallery_box">
+					<li>
+						<a href="#0"><img src="/static/images/course-5.jpg" style="height:500px;width:450px">
+							<div class="box_data">
+								<span>Doubt <br>Clearance</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#0"><img src="/static/images/course-4.jpg" style="height:320px;width:450px">
+							<div class="box_data">
+								<span>Mentors</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#0"><img src="/static/images/course-3.jpg" style="height:500px;width:420px">
+							<div class="box_data">
+								<span>Interactive<br>Sessions</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#0"><img src="/static/images/edu2.jpg" style="height:300px;width:430px">
+							<div class="box_data">
+								<span>Education</span>
+							</div>
+						</a>
+					</li>
+					<li style="    position: relative;
 				  top: -134px;">
-				  <a href="#0"><img src="/static/images/bg_12.jpg"style="height:500px;width:460px">
-				  <div class="box_data">
-				  <span>Career <br>Guidance</span>
-				  </div></a>
-				  </li>
-				  <li>
-				  <a href="#0"><img src="/static/images/course-7.jpg"style="height:300px;width:430px">
-				  <div class="box_data">
-				  <span>Courses</span>
-				  </div></a>
-				  </li>
-				  
-				  </ul>
-			</section>
+						<a href="#0"><img src="/static/images/bg_12.jpg" style="height:500px;width:460px">
+							<div class="box_data">
+								<span>Career <br>Guidance</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#0"><img src="/static/images/course-7.jpg" style="height:300px;width:430px">
+							<div class="box_data">
+								<span>Courses</span>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
 {% endblock %}
