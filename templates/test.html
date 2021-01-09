@@ -22,7 +22,7 @@
     {% if user.is_authenticated %}
         <div class="test-button-property"><a class="test-button" href="{% url 'personality_home' %}">START TEST</a></div>
     {% else %}
-        <div class="test-button-property"><a class="test-button" href="{% url 'account_signup' %}">START TEST</a></div>
+        <div class="test-button-property"><a class="test-button" href="/accounts/login/">START TEST</a></div>
     {% endif %}
 	</div>
 	<div class="rightDiv" style="background-image: url('/static/images/start-test-2.jpg');">
@@ -32,7 +32,7 @@
       {% if user.is_authenticated %}
         <div class="test-button-property"><a class="test-button" href="{% url 'personality_home' %}">START TEST</a></div>
      {% else %}
-        <div class="test-button-property"><a class="test-button" href="{% url 'account_signup' %}">START TEST</a></div>
+        <div class="test-button-property"><a class="test-button" href="/accounts/login/">START TEST</a></div>
      {% endif %}
 	</div>
 </div>
