@@ -11175,4 +11175,47 @@ textarea.form-control {
   width: 1000px;
   height: 500px;
   background-size: 1000px 500px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
+
+.heading1 {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 170px;
+}
+
+.course_img {
+  margin: 40px 0px 40px 255px ;
+  width: 700px;
+  height: 400px;
+}
+
+.introduction {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 170px 20px 170px;
+}
+
+.sub-heading {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 170px;
+}
+
+.about {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 170px 20px 170px;
+}
+
+.course-list {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 10px 170px 20px 170px;
+}
+
+.sub-course-list {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 10px 20px 10px;
+}
