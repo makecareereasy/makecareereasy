@@ -11176,8 +11176,10 @@ textarea.form-control {
   width: 1000px;
   height: 500px;
   background-size: 1000px 500px;
-  background-repeat: no-repeat; }
-  .services-2 {
+  background-repeat: no-repeat; 
+}
+
+.services-2 {
     width: 100%;
     display: block;
     padding: 0;
@@ -11259,7 +11261,7 @@ textarea.form-control {
       .services-2:hover .icon:after {
         background: #fff;
         right: 50px; }
-  
+
   .tabulation .nav-pills .nav-item {
     margin-bottom: 10px; }
     .tabulation .nav-pills .nav-item .nav-link {
@@ -11279,7 +11281,7 @@ textarea.form-control {
         border: 7px double white; }
         .tabulation .nav-pills .nav-item .nav-link.active span {
           color: #fff; }
-  
+
   .tabulation .tab-content {
     background: #fff;
     padding: 0; }
@@ -11325,15 +11327,15 @@ textarea.form-control {
         z-index: 1;
         background: #ffff;
       }
-      
+
       @media (max-width: 575px) {
         .categories-area .single-cat {
           padding: 30px 22px;
         }
       }
-      
+
       @media only screen and (min-width: 576px) and (max-width: 767px) {
-      
+
         .categories-area .single-cat {
           padding: 30px 18px;
         }
@@ -11360,7 +11362,7 @@ textarea.form-control {
         margin-bottom: 30px;
         display: block;
       }
-      
+
       .categories-area .single-cat .cat-cap h5 > a {
         font-size: 24px;
         font-weight: 600;
@@ -11373,7 +11375,7 @@ textarea.form-control {
         transition: all 0.2s ease-out 0s;
         font-family: "Sarabun", sans-serif;
       }
-      
+
       @media only screen and (min-width: 576px) and (max-width: 767px) {
         .categories-area .single-cat .cat-cap h5 > a {
           font-size: 21px;
@@ -11394,7 +11396,7 @@ textarea.form-control {
         -o-transition: all 0.2s ease-out 0s;
         transition: all 0.2s ease-out 0s;
       }
-      
+
       @media only screen and (min-width: 576px) and (max-width: 767px) {
         /* line 53, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_categories.scss */
         .categories-area .single-cat .cat-cap p {
@@ -11403,7 +11405,7 @@ textarea.form-control {
       }
       .categories-area .single-cat .cat-cap a {
         color: #1c165c;
-    
+
         font-size: 16px;
         font-weight: 600;
         -webkit-transition: all 0.2s ease-out 0s;
@@ -11430,4 +11432,45 @@ textarea.form-control {
       .categories-area .single-cat:hover .cat-cap a {
         color: #fff;
       }
-    
+
+.heading1 {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 150px;
+}
+
+.course_img {
+  margin: 40px 0px 40px 255px ;
+  width: 700px;
+  height: 400px;
+}
+
+.introduction {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 150px 20px 150px;
+}
+
+.sub-heading {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 150px;
+}
+
+.about {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 150px 50px 150px;
+}
+
+.course-list {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 10px 150px 20px 150px;
+}
+
+.sub-course-list {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 10px 50px 20px 10px;
+}
