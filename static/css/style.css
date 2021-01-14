@@ -8160,7 +8160,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 400; }
+  font-weight: 500; }
 
 .text-primary {
   color: #fd5f00 !important; }
@@ -8603,7 +8603,7 @@ h1, h2, h3, h4, h5,
         height: 10px;
         margin: 5px;
         border-radius: 50%;
-        background: #fd5f00; }
+        background: #035aa6; }
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
 
@@ -8717,7 +8717,7 @@ h1, h2, h3, h4, h5,
 .wrap-about {
   position: relative; }
   .wrap-about h2 {
-    font-weight: 500; }
+    font-weight: 600; }
   .wrap-about .img {
     width: 100%; }
 
@@ -8760,7 +8760,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     width: 80px;
     height: 80px;
-    background: #fd5f00;
+    background: #035aa6;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
