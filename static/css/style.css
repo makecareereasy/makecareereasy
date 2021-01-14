@@ -10367,9 +10367,9 @@ textarea.form-control {
   z-index: 100;
   position: absolute;
   left: 50%;
-  border: 7px solid #bf164d;
+  
   border-radius: 100%;
-  background-color: #bf164d;
+  
   box-shadow: 0 0 5px #ccc;
   width: 200px;
   height: 200px;
@@ -10482,18 +10482,38 @@ textarea.form-control {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li:nth-child(even) {
-    margin-bottom: 0;
-    min-height: 0;
+    margin-bottom: 20% !important;
     right: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li:nth-child(odd) {
-    margin-bottom: 0;
-    min-height: 0;
+    margin-bottom: 10% !important;
     left: 0;
   }
+  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.timeline > li:nth-child(odd) .line:before {
+  top: 60px;
+  left: 690px;
+  height: 340px;
+  -ms-transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.timeline > li:nth-child(even) .line:before {
+  top: 150px;
+  left: 450px;
+  height: 340px;
+  -ms-transform: rotate(28deg);
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -10521,17 +10541,19 @@ textarea.form-control {
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li:nth-child(odd) .timeline-panel {
     width: 70%;
-    text-align: right;
+    text-align: left;
     padding: 0 0 20px;
   }
-}
+} 
 
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li .line {
     display: none;
   }
-}
-
+} 
+/* *{
+  border:solid;
+} */
 @media only screen and (max-width: 767px) {
   .timeline > li:nth-child(even) {
     margin-bottom: 0;
