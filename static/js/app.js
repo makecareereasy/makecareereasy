@@ -432,8 +432,8 @@ function courseTemplate(course) {
     <h4 class="sub-heading">About</h4>
     <p class="introduction">${course.courses.content.introduction}</p>
     <h4 class="sub-heading">Why Study it?</h4>
-    <p class="about">${course.courses.content.paragraph.para1}</p>
-    <p class="about">${course.courses.content.paragraph.para2}</p>
+    <p class="about1">${course.courses.content.paragraph.para1}</p>
+    <p class="about1">${course.courses.content.paragraph.para2}</p>
     <ul>
       <li class="course-list"><strong>${course.courses.content.paragraph.adv1}</strong> ${course.courses.content.paragraph.content_adv1}</li>
       <li class="course-list"><strong>${course.courses.content.paragraph.adv2}</strong> ${course.courses.content.paragraph.content_adv2}</li>
