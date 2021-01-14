@@ -153,6 +153,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, '/static')
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/personality/home/'
 LOGOUT_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_REDIRECT_URL ='/'
 
 
 # Auth Urls
