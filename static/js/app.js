@@ -3,7 +3,7 @@ const coursesData = [
     "courses": {
     "id": "ml",
     "title": "Machine Learning and Algorithms",
-    "img_url": "/static/images/ml.jpeg",
+    "img_url": "/static/images/ML.png",
     "content": {
       "introduction": "Machine learning (ML) is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence. Machine learning algorithms build a model based on sample data, known as 'training data', in order to make predictions or decisions without being explicitly programmed to do so. Machine learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is difficult or unfeasible to develop conventional algorithms to perform the needed tasks.",
       "paragraph": {
@@ -55,7 +55,7 @@ const coursesData = [
   "courses": {
     "id": "dsa",
     "title": "Data Structure and Algorithms",
-    "img_url": "/static/images/dsa.jpg",
+    "img_url": "/static/images/DATA STRUCUTRE.png",
     "content": {
         "introduction": "In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.",
       "paragraph": {
@@ -109,7 +109,7 @@ const coursesData = [
   "courses": {
     "id": "iot",
     "title": "Internet of Things",
-    "img_url": "/static/images/iot.jpeg",
+    "img_url": "/static/images/IoT.png",
     "content": {
       "introduction": "The Internet of things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.",
       "paragraph": {
@@ -162,7 +162,7 @@ const coursesData = [
   "courses": {
     "id": "ps",
     "title": "Political Science",
-    "img_url": "/static/images/ps.png",
+    "img_url": "/static/images/POLITICAL SC.png",
     "content": {
       "introduction": "The Internet of things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.",
       "paragraph": {
@@ -215,7 +215,7 @@ const coursesData = [
   "courses": {
     "id": "ee",
     "title": "Electrical Engineering",
-    "img_url": "/static/images/ee.jpeg",
+    "img_url": "/static/images/ElectricalEngineering.png",
     "content": {
       "introduction": "Electrical engineering is an engineering discipline concerned with the study, design and application of equipment, devices and systems which use electricity, electronics, and electromagnetism. It emerged as an identifiable occupation in the latter half of the 19th century after commercialization of the electric telegraph, the telephone, and electrical power generation, distribution and use.",
       "paragraph": {
@@ -268,7 +268,7 @@ const coursesData = [
   "courses": {
     "id": "mm",
     "title": "Marketing Management",
-    "img_url": "/static/images/mm.jpg",
+    "img_url": "/static/images/Marketingmanagement.png",
     "content": {
       "introduction": "",
       "paragraph": {
@@ -321,7 +321,7 @@ const coursesData = [
   "courses": {
     "id": "gd",
     "title": "Graphic Design",
-    "img_url": "/static/images/gd.jpg",
+    "img_url": "/static/images/Graphicdesigning.png",
     "content": {
       "introduction": "Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.",
       "paragraph": {
@@ -374,7 +374,7 @@ const coursesData = [
   "courses": {
     "id": "hrm",
     "title": "Human Resource Management",
-    "img_url": "/static/images/hr.jpg",
+    "img_url": "/static/images/HR.png",
     "content": {
       "introduction": "Human resource management (HRM or HR) is the strategic approach to the effective management of people in a company or organization such that they help their business gain a competitive advantage. It is designed to maximize employee performance in service of an employer's strategic objectives. ",
       "paragraph": {
