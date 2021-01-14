@@ -53,7 +53,22 @@ def ml(request):
     return render(request,'machine.html')
 
 def data(request):
-    return render(request,'datastructure.html')
+    return render(request,'machine.html')
 
 def iot(request):
-    return render(request,'internetofthings.html')
+    return render(request,'machine.html')
+
+def polsci(request):
+    return render(request,'machine.html')
+
+def eeng(request):
+    return render(request,'machine.html')
+
+def mmanage(request):
+    return render(request,'machine.html')
+
+def gdesign(request):
+    return render(request,'machine.html')
+
+def hrmanage(request):
+    return render(request,'machine.html')

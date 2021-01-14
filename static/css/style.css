@@ -5396,10 +5396,11 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
-.bg-light {
-  background-color: #f8f9fa !important; }
+.bg-lightt {
+  background-color: white !important; }
+  /* rgb(241, 241, 247) */
 
-a.bg-light:hover, a.bg-light:focus,
+a.bg-lightt:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
   background-color: #dae0e5 !important; }
@@ -8159,7 +8160,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 400; }
+  font-weight: 500; }
 
 .text-primary {
   color: #fd5f00 !important; }
@@ -8602,7 +8603,7 @@ h1, h2, h3, h4, h5,
         height: 10px;
         margin: 5px;
         border-radius: 50%;
-        background: #fd5f00; }
+        background: #035aa6; }
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
 
@@ -8716,7 +8717,7 @@ h1, h2, h3, h4, h5,
 .wrap-about {
   position: relative; }
   .wrap-about h2 {
-    font-weight: 500; }
+    font-weight: 600; }
   .wrap-about .img {
     width: 100%; }
 
@@ -8759,7 +8760,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     width: 80px;
     height: 80px;
-    background: #fd5f00;
+    background: #035aa6;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -9995,7 +9996,7 @@ textarea.form-control {
     margin: 10px 10px 10px 10px;
   }
 } 
-
+/*contact page end*/
 
   .ftco-footer {
     background: #CFEBFF;
@@ -10367,9 +10368,9 @@ textarea.form-control {
   z-index: 100;
   position: absolute;
   left: 50%;
-  border: 7px solid #bf164d;
+  
   border-radius: 100%;
-  background-color: #bf164d;
+  
   box-shadow: 0 0 5px #ccc;
   width: 200px;
   height: 200px;
@@ -10420,7 +10421,7 @@ textarea.form-control {
   left: 690px;
   width: 4px;
   height: 340px;
-  background-color: purple;
+  background-color:rgb(3,90,166);
   -ms-transform: rotate(-44deg);
   -webkit-transform: rotate(-44deg);
   transform: rotate(-44deg);
@@ -10435,7 +10436,7 @@ textarea.form-control {
   left: 450px;
   width: 4px;
   height: 340px;
-  background-color:purple;
+  background-color:rgb(3,90,166);
   -ms-transform: rotate(44deg);
   -webkit-transform: rotate(44deg);
   transform: rotate(44deg);
@@ -10482,18 +10483,38 @@ textarea.form-control {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li:nth-child(even) {
-    margin-bottom: 0;
-    min-height: 0;
+    margin-bottom: 20% !important;
     right: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li:nth-child(odd) {
-    margin-bottom: 0;
-    min-height: 0;
+    margin-bottom: 10% !important;
     left: 0;
   }
+  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.timeline > li:nth-child(odd) .line:before {
+  top: 60px;
+  left: 690px;
+  height: 340px;
+  -ms-transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.timeline > li:nth-child(even) .line:before {
+  top: 150px;
+  left: 450px;
+  height: 340px;
+  -ms-transform: rotate(28deg);
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -10521,17 +10542,19 @@ textarea.form-control {
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li:nth-child(odd) .timeline-panel {
     width: 70%;
-    text-align: right;
+    text-align: left;
     padding: 0 0 20px;
   }
-}
+} 
 
 @media (min-width: 768px) and (max-width: 991px) {
   .timeline > li .line {
     display: none;
   }
-}
-
+} 
+/* *{
+  border:solid;
+} */
 @media only screen and (max-width: 767px) {
   .timeline > li:nth-child(even) {
     margin-bottom: 0;
@@ -11175,4 +11198,47 @@ textarea.form-control {
   width: 1000px;
   height: 500px;
   background-size: 1000px 500px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
+
+.heading1 {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 150px;
+}
+
+.course_img {
+  margin: 40px 0px 40px 255px ;
+  width: 700px;
+  height: 400px;
+}
+
+.introduction {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 150px 20px 150px;
+}
+
+.sub-heading {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 150px;
+}
+
+.about1 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 20px 150px 50px 150px;
+}
+
+.course-list {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 10px 150px 20px 150px;
+}
+
+.sub-course-list {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 10px 50px 20px 10px;
+}
