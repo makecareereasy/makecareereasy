@@ -41,11 +41,22 @@ urlpatterns = [
     path('about/', TemplateView.as_view(
         template_name='about_us.html'
     ), name='about_us'),
-    path('courses/ml/',views.ml,name='machine.html'),
+    path('courses/ml/',views.ml,name='machine.html#ml'),
     
-    path('courses/data/',views.data,name='datastructure.html'),
+    path('courses/data/',views.data,name='machine.html#dsa'),
 
-    path('courses/iot/',views.iot,name='internetofthings.html'),
+    path('courses/iot/',views.iot,name='machine.html#iot'),
+
+    path('courses/polsci/',views.polsci,name='machine.html#ps'),
+
+    path('courses/eeng/',views.eeng,name='machine.html#ee'),
+
+    path('courses/mmanage/',views.mmanage,name='machine.html#mm'),
+
+    path('courses/gdesign/',views.gdesign,name='machine.html#gd'),
+
+    path('courses/hrmanage/',views.hrmanage,name='machine.html#hrm'),
+
 
     path('personality/', include('personality.urls')),
     path('', include('accounts.urls')),
