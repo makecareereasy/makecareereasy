@@ -9909,7 +9909,7 @@ textarea.form-control {
     .congo-back-img {
       width: 1000px;
       height: 500px;
-      background-image: url('/static/images/congratulations.jpg');
+      background-image: url('https://raw.githubusercontent.com/mekacareereasy/tools/main/images/congratulations.jpg');
       background-size: 1000px 500px;
       background-repeat: no-repeat; }
       
