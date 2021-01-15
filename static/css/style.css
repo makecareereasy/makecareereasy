@@ -11242,3 +11242,253 @@ textarea.form-control {
   letter-spacing: 0.5px;
   margin: 10px 50px 20px 10px;
 }
+/*home page - variety of fields - start */
+.variety{
+  height:500px;
+  
+}
+.variety .card-container-1,.card-container-2,.card-container-3,.card-container-4,.card-container-5{
+  
+  
+  
+  border:solid rgb(3, 90, 166);
+  border-radius:4px;
+  
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 18px -2px rgba(0,0,0,0.67);
+  -moz-box-shadow: 0px 5px 18px -2px rgba(0,0,0,0.67);
+  box-shadow: 0px 5px 18px -2px rgba(0,0,0,0.67);
+}
+.card{
+  height:100%;
+  overflow: hidden;
+}
+.card-img-top{
+  height:40%;
+}
+*{
+  border:soli
+}
+.card-container-1{
+  top:10%;
+  left: 20%;
+  height:400px;
+  z-index: 1;
+  transition:left .3s,top .3s,height .3s;
+}
+.card-container-1:hover{
+  left:10%;
+  top:0;
+  height:500px;
+}
+@media (min-width:768px) and (max-width:991px) {
+  .variety{
+    height:auto;
+  }
+  .card-container-1{
+    left:0;
+    }
+    .card-container-1:hover{
+      left:0;
+      top:0;
+      height:400px;
+    }
+}
+@media (min-width:481px) and (max-width:767px) {
+  .variety{
+    height:auto;
+  }
+  .card-container-1{
+    left:0;
+  }
+  .card-container-1:hover{
+    left:0;
+    top:0;
+    height:400px;
+  }
+}
+@media (max-width:576px){
+  .card-container-1{
+    left:0;
+  }
+  .card-container-1:hover{
+    left:0;
+    top:0;
+    height:400px;
+  }
+}
+.card-container-2{
+  left: 10%;
+  top:15% ;
+  height:350px;
+  z-index: 2;
+  transition:left .3s,top .3s,height .3s;
+}
+.card-container-2:hover{
+  left:0;
+  top:0;
+  height:500px;
+  
+}
+@media (min-width:768px) and (max-width:991px) {
+  .card-container-2{
+    left:0;
+    height:400px;
+  
+  }
+  .card-container-2:hover{
+    left:0;
+    top:0;
+    height:400px;
+    
+  }
+}
+@media (min-width:481px) and (max-width:767px) {
+  .card-container-2{
+    left:0;
+  }
+  .card-container-2:hover{
+    left:0;
+    top:0;
+    height:350px;
+    
+  }
+}
+@media (max-width:576px){
+  .variety{
+    height:auto;
+  }
+  .card-container-2{
+    left:0;
+    height:400px;
+  }
+  .card-container-2:hover{
+    left:0;
+    top:0;
+    height:400px;
+    
+  }
+}
+.card-container-3{
+  top:10%;
+  height:400px;
+  z-index: 3;
+  transition:top .3s,height .3s;
+}
+.card-container-3:hover{
+  top:0;
+  height:500px;
+}
+@media (min-width:768px) and (max-width:991px) {
+  .card-container-3:hover{
+    top:0;
+    height:400px;
+  }
+}
+@media (min-width:481px) and (max-width:767px) {
+ 
+  
+    .card-container-3:hover{
+      top:0;
+      height:400px;
+    }
+    
+  
+}
+.card-container-4{
+  right: 10%;
+  z-index:2;
+  top:15%;
+  height:350px;
+  transition:right .3s,top .3s,height .3s;
+}
+.card-container-4:hover{
+  right:0;
+  top:0;
+  height:500px;
+}
+@media (min-width:768px) and (max-width:991px) {
+  .card-container-4{
+    left:15%;
+    right:0;
+  }
+  .card-container-4:hover{
+    left:15%;
+    right:0;
+    height:350px;
+  }
+}
+@media (min-width:481px) and (max-width:767px) {
+  .card-container-4{
+    left:0;
+  }
+  .card-container-4:hover{
+    left:0;
+    right:0;
+    top:0;
+    height:350px;
+    
+  }
+}
+@media (max-width:576px){
+  .card-container-4{
+    left:0;
+    height:400px;
+  }
+  .card-container-4:hover{
+    left:0;
+    top:0;
+    height:400px;
+    
+  }
+}
+.card-container-5{
+  top:10%;
+  right: 20%;
+  height:400px;
+  z-index:1;
+  transition:right .3s,top .3s,height .3s;
+}
+.card-container-5:hover{
+  right:10%;
+  top:0;
+  height:500px;
+}
+@media (min-width:768px) and (max-width:991px) {
+  .card-container-5{
+    left:15%;
+    height:350px;
+  }
+  .card-container-5:hover{
+    right:10%;
+    top:0;
+    height:350px;
+  }
+}
+@media (min-width:481px) and (max-width:767px) {
+  .card-container-5{
+    
+    left:0;
+    height:350px;
+  }
+  .card-container-5:hover{
+    right:0;
+    left:0;
+    top:0;
+    height:350px;
+    
+  }
+}
+@media (max-width:576px){
+  .card-container-5{
+    left:0%;
+  
+  }
+  .card-container-5:hover{
+    left:0%;
+    top:0;
+    height:350px;
+    
+  }
+}
+/*home page - variety of fields - end */
