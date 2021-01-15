@@ -184,8 +184,6 @@ class PersonalityTest(LoginRequiredMixin, View):
 class PersonalityCompleted(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         if request.user.applicant.taken_personality_test and not request.user.is_staff:
-            pickle_in = open(os.path.join(classifer_base, 'employability.pkl'), 'rb')
-            clf_emp = pickle.load(pickle_in)
             avg_o = request.session.get('avg_o', None)
             avg_c = request.session.get('avg_c', None)
             avg_e = request.session.get('avg_e', None)
