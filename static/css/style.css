@@ -10552,9 +10552,7 @@ textarea.form-control {
     display: none;
   }
 } 
-/* *{
-  border:solid;
-} */
+
 @media only screen and (max-width: 767px) {
   .timeline > li:nth-child(even) {
     margin-bottom: 0;
@@ -10745,7 +10743,8 @@ textarea.form-control {
 /* img{ max-width:100%;} */
 
 .gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
-.gallery_box{ padding:0;display: flow-root;}
+.gallery_box{ padding:0;display: flow-root;
+margin-bottom: -7rem;}
 
 .gallery_box li:hover img {
   
@@ -10765,10 +10764,13 @@ textarea.form-control {
     height: 438px; 
 }
 .gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
-.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
-.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;
+text-transform: uppercase;
+font-size: 1rem;
+font-weight: bold;}
 .gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
-.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+.gallery_box li:hover .box_data{ background:rgba(3,90,166,0.55)}
 .testimonial_095_slide > h5 > a:hover {
   border: 1px solid #aa914f;
 }
@@ -11242,3 +11244,32 @@ textarea.form-control {
   letter-spacing: 0.5px;
   margin: 10px 50px 20px 10px;
 }
+/* .variety.span{
+  font-size:15px;
+} */
+.varietyy{
+text-decoration:none; 
+color: #0062cc;
+padding: 5px;
+border-bottom:2px solid #0062cc;
+} 
+ /* .variety.box{
+  padding:60px 0px;
+} */
+
+.box-part{
+  background:#FFF;
+  border-radius:25%;
+  border-style: none none none solid;
+  padding:60px 15px;
+  border-color: rgb(3, 90, 166) ;
+  margin:30px 0px;
+}
+.box-part:hover{
+  background:rgb(230, 231, 235);
+border:5px solid rgb(3, 90, 166) ;
+border-radius:30%;
+
+
+}
+
