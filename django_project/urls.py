@@ -23,7 +23,9 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 from django.conf.urls import url
 from .views import Home
+
 app_mname='django_project'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$',views.index,name='index.html'),
@@ -61,3 +63,5 @@ urlpatterns = [
     path('personality/', include('personality.urls')),
     path('', include('accounts.urls')),
 ]
+
+handler404 = 'django_project.views.error_404'

@@ -1,6 +1,5 @@
 from django.views.generic import TemplateView
 from django.shortcuts import render
-from django.http import HttpResponse,HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
 from django.urls import reverse
@@ -72,3 +71,6 @@ def gdesign(request):
 
 def hrmanage(request):
     return render(request,'machine.html')
+
+def error_404(request,exception):
+    return render(request,'page_fail.html')
