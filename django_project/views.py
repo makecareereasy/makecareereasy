@@ -72,3 +72,6 @@ def gdesign(request):
 
 def hrmanage(request):
     return render(request,'machine.html')
+
+def error_404(request, exception):
+    return render (request,'page_fail.html', status=404)
