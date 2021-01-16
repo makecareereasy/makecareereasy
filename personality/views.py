@@ -251,24 +251,25 @@ def capture(request):
     while int(time.time()-start) <= 7:
         # Capture frame-by-frame
         ret, frame = video_capture.read()
-        if face_extractor(frame) is not None:            
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        if (ret):
+            if face_extractor(frame) is not None:            
+                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-            faces = face_classifier.detectMultiScale(gray, 1.3, 5)
-            # Draw a rectangle around the faces
-            for (x, y, w, h) in faces:
-                cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-                cv2.putText(frame, "Detected Candidate", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)                
-                found=True           
+                faces = face_classifier.detectMultiScale(gray, 1.3, 5)
+                # Draw a rectangle around the faces
+                for (x, y, w, h) in faces:
+                    cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+                    cv2.putText(frame, "Detected Candidate", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)                
+                    found=True           
 
-        else:
-            cv2.putText(frame, "No Detected Candidate", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
-            if(int(time.time()-start)>=7 and found==False):
-                break       
+            else:
+                cv2.putText(frame, "No Detected Candidate", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
+                if(int(time.time()-start)>=7 and found==False):
+                    break       
 
 
-        # Display the resulting frame
-        cv2.imshow('Face Detection', frame)
+            # Display the resulting frame
+            cv2.imshow('Face Detection', frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
