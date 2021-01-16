@@ -9886,7 +9886,8 @@ textarea.form-control {
 
   .test-button-property {
       text-align: center;
-      padding-top: 5px;  }
+      padding-top: 5px; 
+      margin-bottom: 16px; }
 
   .test-button {
       -webkit-border-radius: 15px;
