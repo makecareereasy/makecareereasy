@@ -9861,7 +9861,8 @@ textarea.form-control {
       font-size: large;
       text-align: center;
       width: 67%;
-      margin: auto; }
+      margin: auto;
+      color: black; }
 
   .outerDiv {
       color: #fff;
@@ -9885,7 +9886,8 @@ textarea.form-control {
 
   .test-button-property {
       text-align: center;
-      padding-top: 26px;  }
+      padding-top: 5px; 
+      margin-bottom: 16px; }
 
   .test-button {
       -webkit-border-radius: 15px;
@@ -11272,4 +11274,3 @@ border-radius:30%;
 
 
 }
-
