@@ -21,7 +21,7 @@ from accounts import views as vi
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
-from django.conf.urls import url
+from django.conf.urls import url,handler404
 from .views import Home
 
 app_mname='django_project'
