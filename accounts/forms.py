@@ -23,6 +23,14 @@ class MyCustomSignupForm(SignupForm):
         user.first_name = self.cleaned_data['first_name']
         user.last_name = self.cleaned_data['last_name']
         user.save()
+        subject_user = "Registration successful"
+        message = 'Dear Candidate,\r\r\nWelcome aboard! Your account has been successfully registered. Attempt the aptitude and personality tests for personalised career assessment. \r\r\nMakeCareerEasy is a proud provide free or low-cost career and personality assessments website for charities, non-profits, and schools. Based on validated theories MakeCareerEasy psychometric assessments are a product of hard research and strong alignment to renown psychometric theories and get hired at right place.\r\r\nThanks for trusting us.\r\r\nTeam MakeCareerEasy'
+        send_mail(
+            subject_user, 
+            message,
+            settings.EMAIL_HOST_USER, 
+            [user.email], 
+            fail_silently = False)
         return user 
 
         

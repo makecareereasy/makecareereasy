@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="center">
+        <form class="text-center border border-light p-5" actiom="success.html" method="POST">
+            {% csrf_token %}
+
+            <p class="h3 mb-3"><i class="fas fa-coffee"></i> MakeCareerEasy Guidance Package</p>
+            <p class="mb-3">Pay 500 INR</p>
+
+            <input type="name" name="name" id="name" required class="form-control mb-4" placeholder="Name">
+
+            <!-- RAZORPAY INTEGRATION HERE -->
+            <script src="https://checkout.razorpay.com/v1/checkout.js" 
+            data-key="rzp_test_9nmrK825fjo0Ym" 
+            data-amount="100"
+            data-currency="INR" 
+            data-order_id="{{payment.id}}" 
+            data-buttontext="Pay with Razorpay"
+            data-name="MakeCareerEasy"
+            data-description="Guidance Package"
+            data-image="https://example.com/your_logo.jpg" 
+            data-prefill.name="PC"
+            data-prefill.email="vision12@gmail.com" 
+            data-theme.color="#F37254">
+            </script>
+        </form>
+    </div>
+
+
+{% endblock %}
+

@@ -60,4 +60,6 @@ urlpatterns = [
 
     path('personality/', include('personality.urls')),
     path('', include('accounts.urls')),
+
+    path('payment/', include('payment.urls')),
 ]
