@@ -5,11 +5,48 @@
 <br>
   <center>
 <div class="congo-back-img">
-    <h1 class="congo-heading">Hello {{ request.user.username }}</h1>
-    <p class="congo-content">Verify Yourself To Continue</p>
+    <h1 class="congo-heading" style="padding-top: 0;">Hello {{ request.user.username }}</h1>
+    <p class="congo-content" style="margin-top: 2%;">Verify Yourself To Continue</p>
 
-    <!-- Modal Opening Button -->
-    <div><a class="congo-button" href="/personality/detect">Verify</a></div>    
+    <!-- Camera -->
+    <div id="#camera_detection"></div>
+    <button onclick="take_snapshot()" class="congo-button" style="margin-top: 11px;">Take Snapshot</button>
+    <div id="results"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+        integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+        crossorigin="anonymous"></script>
+    <script>
+        //load all webcam
+        const snapshotInterval = 1000;
+        const timeoutSecs = 10_000;
+        const results = [];
+
+        Webcam.set({
+            width: 350,
+            height: 280,
+            image_format: 'jpeg',
+            jpeg_quality: 90,
+        })
+
+        Webcam.attach("#camera_detection");
+
+        function take_snapshot() {
+            Webcam.snap(function (data_uri) {
+                // display results in page
+                
+                results.push(data_uri);
+            });
+            const interval = setInterval(function () {
+                take_snapshot();
+            }, 1 * snapshotInterval)
+            setTimeout(function () {
+                clearInterval(interval);
+            }, 10 * timeoutSecs);
+        }
+    </script>
+
+    <!-- <div><a class="congo-button" href="/personality/detect">Verify</a></div>     -->
       
 </div>
   </center>
